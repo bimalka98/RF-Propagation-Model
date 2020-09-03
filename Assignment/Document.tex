@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt]{article}%,twocolumn
+%\documentclass[a4paper,11pt]{article}
+\input{settings/packages}
+\input{settings/page}
+\input{settings/macros}
+\usepackage[ numbered]{matlab-prettifier}%framed,%
+
+\begin{document}
+
+\input{content/title_page}
+\tableofcontents
+\pagebreak
+%%-----------------------------------------------------------------------
+\section{Modeling the RF propagation Model Using Matlab}
+%%-----------------------------------------------------------------------
+\subsection{Relationship between Free Space Path Loss and Frequency}
+
+\textit{Consider  following meanings for the parameters}\\
+
+\begin{tabular}{l l }
+	$P_{RX}$ & = Received Power at the Receiving Antenna\\
+	$P_{TX}$ & = Transmitted Power at the Transmitting Antenna\\
+	$f$ & = Frequency of the wave in Hz\\
+	$f_{GHz}$ & = Frequency of the wave in GHz\\
+	$d$& = Distance between the antennas in m\\
+	$d_{km}$& = Distance between the antennas in km\\
+	$G_{TX}$& = Directive gain of the Transmitter\\
+	$G_{RX}$& = Directive gain of the Receiver\\
+	$c$& = Velocity of the electromagnetic waves in a vacuum\\
+
+\end{tabular}\\[1cm]
+
+
+The relationship between above parameters can be given as follows
+\[
+\begin{split}
+P_{RX} & = P_{TX}.\frac{c^2}{(4\pi.f.d)^2}.G_{TX}.G_{RX}
+\end{split}
+\]
+From the above equation, free space path loss, say $L$
+\[
+\begin{split}
+L = \frac{(4\pi.f.d)^2}{c^2}
+\end{split}
+\]
+
+By considering $\ 10.log_{10}()$ in both sides, Free Space Path Loss in dB, say $L_{dB}$
+
+\[
+\begin{split}
+\log_{10}(L) &= 10.\log_{10}(\frac{(4\pi.f.d)^2}{c^2})\\
+L_{dB}& = 10.\log_{10}((4\pi.f.d)^2) - 10.\log_{10}(c^2)\\
+&=20.\log_{10}(4\pi.f.d)-20.\log_{10}(c)\\
+&=20.\log_{10}(4\pi)-20.\log_{10}(c) + 20.\log_{10}(f) + 20.\log_{10}(d)\\
+&=20.\log_{10}(\frac{4\pi}{c}) + 20.\log_{10}(f) + 20.\log_{10}(d)\\
+&= -147.5522168 + 20.\log_{10}(f_{GHz}.10^9) + 20.\log_{10}(d_{km}.10^3)\\
+& = -147.5522168 + 20.\log_{10}(10^9)+ 20.\log_{10}(f_{GHz}) + 20.\log_{10}(10^3) + 20.\log_{10}(d_{km})\\
+&= -147.5522168 + 180+ 20.\log_{10}(f_{GHz}) + 60 + 20.\log_{10}(d_{km})\\
+&= -147.5522168 + 240+ 20.\log_{10}(f_{GHz}) + 20.\log_{10}(d_{km})\\
+&= +92.44778322+20.\log_{10}(f_{GHz}) + 20.\log_{10}(d_{km})
+\end{split}
+\]
+Since transmitter and receiver are located at distance of 10km apart, by substituting $d_{km}= 10$.\\
+
+Free Space Path Loss in dB, $L_{dB}$ as a function of frequency in Giga Hertz
+
+\[
+\begin{split}
+L_{dB}(f_{GHz})&=  +112.44778322+20.\log_{10}(f_{GHz})
+\end{split}
+\]
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{figures/fsl}
+	\caption{Relationship between Free Space Path Loss and Frequency}
+\end{figure}
+
+
+
+%%-----------------------------------------------------------------------
+\pagebreak
+\subsection{Rain attenuation, Fog attenuation and Atmospheric gas attenuation with Frequency}
+\subsubsection{Rain attenuation}
+\subsubsection{Fog attenuation}
+\subsubsection{Atmospheric gas attenuation}
+
+%%-----------------------------------------------------------------------
+\subsection{Total Path Loss with Frequency}
+
+
+\subsection{Codes and Models}
+
+%\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{RF_Propagation_Model.m}
+
+%%-----------------------------------------------------------------------
+%\hrule
+%\bibliographystyle{plain}
+%\bibliography{refer}
+
+%---------------------------------------------------------------------------
+\end{document}
