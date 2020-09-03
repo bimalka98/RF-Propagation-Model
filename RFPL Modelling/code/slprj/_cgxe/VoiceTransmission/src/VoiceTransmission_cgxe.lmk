@@ -1,0 +1,47 @@
+CC     = "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -nodeclspec 
+LDFLAGS = -s -dll -L"C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"c_mexapi_version.obj"\
+	"lccstub.obj"\
+	"VoiceTransmission_cgxe.obj"\
+	"m_s7eNzMSLwHFLj7U2jZKVUG.obj"\
+	"VoiceTransmission_cgxe_registry.obj"\
+	"DAHostLib_rtw.obj"\
+	"HostLib_Audio.obj"\
+	"VoiceTransmission_cgxe.def"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libmx.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libmex.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libmat.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libut.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libemlrt.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libmwcgxert.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libmwslexec_simbridge.lib"\
+	"C:\Program Files\MATLAB\R2018a\lib\win64\libmwipp.lib"\
+	"C:\Program Files\MATLAB\R2018a\extern\lib\win64\microsoft\libcovrt.lib"\
+
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2018a\extern\include"  -I"C:\Program Files\MATLAB\R2018a\simulink\include"  -I"C:\Program Files\MATLAB\R2018a\rtw\c\src"  -I"C:\Users\ASUS\Desktop\GitRepos\RF-Propagation-Model\RFPL Modelling\code\slprj\_cprj"  -I"C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\include64"  -I"C:\Users\ASUS\Desktop\GitRepos\RF-Propagation-Model\RFPL Modelling\code\slprj\_cgxe\VoiceTransmission\src"  -I"C:\Program Files\MATLAB\R2018a\toolbox\dsp\include"  -I"C:\Program Files\MATLAB\R2018a\toolbox\shared\spc\src_ml\extern\include" 
+ 
+
+VoiceTransmission_cgxe.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o VoiceTransmission_cgxe.mexw64 @VoiceTransmission_cgxe.lmko
+c_mexapi_version.obj :	"C:\Program Files\MATLAB\R2018a\extern\version\c_mexapi_version.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2018a\extern\version\c_mexapi_version.c"
+lccstub.obj :	"C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\mex\lccstub.c"
+VoiceTransmission_cgxe.obj :	"VoiceTransmission_cgxe.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "VoiceTransmission_cgxe.c"
+m_s7eNzMSLwHFLj7U2jZKVUG.obj :	"m_s7eNzMSLwHFLj7U2jZKVUG.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_s7eNzMSLwHFLj7U2jZKVUG.c"
+VoiceTransmission_cgxe_registry.obj :	"VoiceTransmission_cgxe_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "VoiceTransmission_cgxe_registry.c"
+DAHostLib_rtw.obj :	"C:\Program Files\MATLAB\R2018a\toolbox\shared\spc\src_ml\extern\src\DAHostLib_rtw.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2018a\toolbox\shared\spc\src_ml\extern\src\DAHostLib_rtw.c"
+HostLib_Audio.obj :	"C:\Program Files\MATLAB\R2018a\toolbox\dsp\include\HostLib_Audio.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2018a\toolbox\dsp\include\HostLib_Audio.c"

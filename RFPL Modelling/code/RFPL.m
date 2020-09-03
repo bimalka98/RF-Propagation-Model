@@ -105,4 +105,4 @@ grid on;
 xlabel('Frequency in GHz');
 ylabel('Path Loss in dB')
 title('Propagation Losses with Frequency')
-legend('FreeSpacePL','RainPL','GasPL','GasPL','TotalPL');
+legend('FreeSpacePL','RainPL','FogPL','GasPL','TotalPL');
