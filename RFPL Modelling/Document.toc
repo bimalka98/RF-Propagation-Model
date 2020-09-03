@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Modeling the RF propagation Model Using Matlab}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Relationship between Free Space Path Loss and Frequency}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Rain attenuation, Fog attenuation and Atmospheric gas attenuation with Frequency}{3}{subsection.1.2}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Rain attenuation - Recommendation ITU-R P.838-3, 2005}{3}{subsubsection.1.2.1}% 
+\contentsline {subsubsection}{\numberline {1.2.2}Fog attenuation - Recommendation ITU-R P.840-3, 2013}{4}{subsubsection.1.2.2}% 
+\contentsline {subsubsection}{\numberline {1.2.3}Atmospheric gas attenuation - Recommendation ITU-R P.676-10, 2013}{4}{subsubsection.1.2.3}% 
+\contentsline {subsection}{\numberline {1.3}Total Path Loss with Frequency}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Codes and Models for Task 1}{6}{subsection.1.4}% 

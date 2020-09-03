@@ -3,7 +3,7 @@
 \input{settings/packages}
 \input{settings/page}
 \input{settings/macros}
-\usepackage[ numbered]{matlab-prettifier}%framed,%
+\usepackage[ framed, numbered]{matlab-prettifier}%framed,%
 
 \begin{document}
 
@@ -70,9 +70,11 @@ L_{dB}(f_{GHz})&=  +112.44778322+20.\log_{10}(f_{GHz})
 \end{split}
 \]
 
+\textbf{\textit{Note : Axes of the following plots are given in the logarithmic scale and range of frequency was chosen from 10 GHz to 1000 GHz since some of the ITU-R models are only defined in that range.}}
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{figures/fsl}
+	\includegraphics[scale=0.35]{figures/fspl}
 	\caption{Relationship between Free Space Path Loss and Frequency}
 \end{figure}
 
@@ -81,17 +83,73 @@ L_{dB}(f_{GHz})&=  +112.44778322+20.\log_{10}(f_{GHz})
 %%-----------------------------------------------------------------------
 \pagebreak
 \subsection{Rain attenuation, Fog attenuation and Atmospheric gas attenuation with Frequency}
-\subsubsection{Rain attenuation}
-\subsubsection{Fog attenuation}
-\subsubsection{Atmospheric gas attenuation}
 
+\textit{Note : For the generation of following plots three of the Matlab built-in functions, namely \textbf{rainpl(), gaspl(), fogpl()} which are developed according to the ITU-R P Series recommendations were used and links for their documentations are given at the Reference section.}
+
+
+\subsubsection{Rain attenuation - Recommendation ITU-R P.838-3, 2005}
+The following plot shows how losses due to rain varies with frequency. The plot assumes the followings in addition to the provided information in the Task 1.\\
+
+\begin{tabular}{l l}
+Elevation angle of the propagation path& = 0 \\
+Polarization tilt angle of the signal &= 0\\
+\end{tabular}\\
+
+In general, horizontal polarization represents the worse case for propagation loss due to rain.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/rpl}
+	\caption{Relationship between Rain attenuation and Frequency}
+\end{figure}
+
+\subsubsection{Fog attenuation - Recommendation ITU-R P.840-3, 2013}
+The following plot shows how losses due to fog/cloud varies with frequency. The plot assumes the following provided information in the Task 1.\\
+
+\begin{tabular}{l l}
+	Ambient Temperature in Celsius&= 31\\
+	Liquid Water Density in $g/m^3$&= 0.5\\
+\end{tabular}\\
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/fpl}
+	\caption{Relationship between Fog attenuation  and Frequency}
+\end{figure}
+
+\subsubsection{Atmospheric gas attenuation - Recommendation ITU-R P.676-10, 2013}
+
+The plot below shows how the propagation loss due to atmospheric gases varies with the frequency. The plot assumes the followings in addition to the provided information in the Task 1.
+
+\begin{tabular}{l l}
+	 Dry air pressure in Pa&= 101325\\
+	 Water Vapor Density in $g/m^3$&= 30.4\\
+\end{tabular}
+
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/gpl}
+	\caption{Relationship between Atmospheric gas attenuation and Frequency}
+\end{figure}
 %%-----------------------------------------------------------------------
 \subsection{Total Path Loss with Frequency}
 
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/tpl}
+	\caption{Relationship between Total Path Loss and Frequency}
+\end{figure}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/all}
+	\caption{Relationship between Various Path Losses and Frequency}
+\end{figure}
 
-\subsection{Codes and Models}
+\pagebreak
+\subsection{Codes and Models for Task 1}
 
-%\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{RF_Propagation_Model.m}
+\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{code/RFPL.m}
 
 %%-----------------------------------------------------------------------
 %\hrule
