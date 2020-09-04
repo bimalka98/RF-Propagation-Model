@@ -74,7 +74,7 @@ L_{dB}(f_{GHz})&=  +112.44778322+20.\log_{10}(f_{GHz})
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.75]{code/FreeSpacePL.png}
+	\includegraphics[scale=0.35]{figures/FreeSpacePL.png}
 	\caption{Relationship between Free Space Path Loss and Frequency}
 \end{figure}
 
@@ -99,7 +99,7 @@ In general, horizontal polarization represents the worse case for propagation lo
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.75]{code/RainPL.png}
+	\includegraphics[scale=0.35]{figures/RainPL.png}
 	\caption{Relationship between Rain attenuation and Frequency}
 \end{figure}
 
@@ -113,7 +113,7 @@ The following plot shows how losses due to fog/cloud varies with frequency. The 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.75]{code/FogPL.png}
+	\includegraphics[scale=0.35]{figures/FogPL.png}
 	\caption{Relationship between Fog attenuation  and Frequency}
 \end{figure}
 
@@ -129,13 +129,13 @@ The plot below shows how the propagation loss due to atmospheric gases varies wi
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.75]{code/GasPL.png}
+	\includegraphics[scale=0.35]{figures/GasPL.png}
 	\caption{Relationship between Atmospheric gas attenuation and Frequency}
 \end{figure}
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.75]{code/AllinOne.png}
+	\includegraphics[scale=0.35]{figures/AllinOne.png}
 	\caption{Relationship between Various Path Losses and Frequency - All in One}
 \end{figure}
 %%-----------------------------------------------------------------------
@@ -143,7 +143,7 @@ The plot below shows how the propagation loss due to atmospheric gases varies wi
 \textit{Note : Range of frequency was chosen from 50 GHz to 1000 GHz since some of the ITU-R models are only defined in 10 GHz - 1000 GHz range.}
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.75]{code/TotalPL.png}
+	\includegraphics[scale=0.35]{figures/TotalPL.png}
 	\caption{Relationship between Total Path Loss and Frequency}
 \end{figure}
 
@@ -197,6 +197,8 @@ Receiver Sensitivity &= &-53.13 dB& \\\hline\hline
 
 \lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{code/RFPL.m}
 
+\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = 
+Matlab-editor]{code/plotCurve.m}
 %%-----------------------------------------------------------------------
 
 \vfill
