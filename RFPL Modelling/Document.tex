@@ -70,11 +70,11 @@ L_{dB}(f_{GHz})&=  +112.44778322+20.\log_{10}(f_{GHz})
 \end{split}
 \]
 
-\textbf{\textit{Note : Axes of the following plots are given in the logarithmic scale and range of frequency was chosen from 10 GHz to 1000 GHz since some of the ITU-R models are only defined in that range.}}
+\textbf{\textit{Note : Axes of the following plots are given in the logarithmic scale and range of frequency was chosen from 50 GHz to 1000 GHz since some of the ITU-R models are only defined in the 10 GHz-1000 GHz range.}}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{figures/fspl}
+	\includegraphics[scale=0.75]{code/FreeSpacePL.png}
 	\caption{Relationship between Free Space Path Loss and Frequency}
 \end{figure}
 
@@ -84,10 +84,10 @@ L_{dB}(f_{GHz})&=  +112.44778322+20.\log_{10}(f_{GHz})
 \pagebreak
 \subsection{Rain attenuation, Fog attenuation and Atmospheric gas attenuation with Frequency}
 
-\textit{Note : For the generation of following plots three of the Matlab built-in functions, namely \textbf{rainpl(), gaspl(), fogpl()} which are developed according to the ITU-R P Series recommendations were used and links for their documentations are given at the Reference section.}
+\textit{Note : For the generation of following plots three of the Matlab built-in functions, namely \textbf{rainpl()\cite{matlab}, gaspl()\cite{matlab}, fogpl()\cite{matlab}} which are developed according to the ITU-R P Series recommendations were used and links for their documentations are given at the Reference section.}
 
 
-\subsubsection{Rain attenuation - Recommendation ITU-R P.838-3, 2005}
+\subsubsection{Rain attenuation - Recommendation ITU-R P.838-3, 2005\cite{rain}}
 The following plot shows how losses due to rain varies with frequency. The plot assumes the followings in addition to the provided information in the Task 1.\\
 
 \begin{tabular}{l l}
@@ -99,11 +99,11 @@ In general, horizontal polarization represents the worse case for propagation lo
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{figures/rpl}
+	\includegraphics[scale=0.75]{code/RainPL.png}
 	\caption{Relationship between Rain attenuation and Frequency}
 \end{figure}
 
-\subsubsection{Fog attenuation - Recommendation ITU-R P.840-3, 2013}
+\subsubsection{Fog attenuation - Recommendation ITU-R P.840-3, 2013\cite{fog}}
 The following plot shows how losses due to fog/cloud varies with frequency. The plot assumes the following provided information in the Task 1.\\
 
 \begin{tabular}{l l}
@@ -113,11 +113,11 @@ The following plot shows how losses due to fog/cloud varies with frequency. The 
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{figures/fpl}
+	\includegraphics[scale=0.75]{code/FogPL.png}
 	\caption{Relationship between Fog attenuation  and Frequency}
 \end{figure}
 
-\subsubsection{Atmospheric gas attenuation - Recommendation ITU-R P.676-10, 2013}
+\subsubsection{Atmospheric gas attenuation - Recommendation ITU-R P.676-10, 2013\cite{gas}}
 
 The plot below shows how the propagation loss due to atmospheric gases varies with the frequency. The plot assumes the followings in addition to the provided information in the Task 1.
 
@@ -129,21 +129,21 @@ The plot below shows how the propagation loss due to atmospheric gases varies wi
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{figures/gpl}
+	\includegraphics[scale=0.75]{code/GasPL.png}
 	\caption{Relationship between Atmospheric gas attenuation and Frequency}
 \end{figure}
 
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.45]{figures/all}
+	\includegraphics[scale=0.75]{code/AllinOne.png}
 	\caption{Relationship between Various Path Losses and Frequency - All in One}
 \end{figure}
 %%-----------------------------------------------------------------------
 \subsection{Total Path Loss with Frequency}
-\textit{Note : Range of frequency was chosen from 10 GHz to 1000 GHz since some of the ITU-R models are only defined in that range.}
+\textit{Note : Range of frequency was chosen from 50 GHz to 1000 GHz since some of the ITU-R models are only defined in 10 GHz - 1000 GHz range.}
 \begin{figure}[!h]
 	\centering
-	\includegraphics[scale=0.35]{figures/tpl}
+	\includegraphics[scale=0.75]{code/TotalPL.png}
 	\caption{Relationship between Total Path Loss and Frequency}
 \end{figure}
 
@@ -151,8 +151,8 @@ By inspecting the figure we can conclude that the minimum propagation loss is gi
 
 \subsection{Link Budget Calculation}
 
-Parameters For the propagation model 
-\begin{tabular}{l r} 
+Parameters For the propagation model
+\begin{tabular}{l r}
 Chosen transmission frequency & 10 GHz\\
 Total Path Loss & 136.9 dB\\
 Transmission power & 50 kW or 47 dB\\
@@ -173,22 +173,20 @@ Received Power =	&Transmission power & +47 dB\\
 &	Total Path Loss & -136.9 dB\\
 &	Receiver Gain &+24.77 dB\\
 &	Cable loss at Receiver &-4 dB\\\hline
-Received Power =&&-42.13 dB\\\hline\hline	
+Received Power =&&-42.13 dB\\\hline\hline
 \end{tabular}\\[1cm]
 
 
-Therefore,\\ 
+Therefore,\\
 \begin{center}
 	\begin{tabular}{l c c c}
 Link margin  & =& Received Power& - Receiver Sensitivity\\
 11 dB& = &-42.13 dB& - Receiver Sensitivity\\
 Receiver Sensitivity &= &-53.13 dB& \\\hline\hline
-\end{tabular}
-
+	\end{tabular}
 \end{center}
 
 \subsection{Transmitting a voice signal over a noisy channel using the above Transmission frequency and the Propagation model.}
-
 
 
 
@@ -200,9 +198,11 @@ Receiver Sensitivity &= &-53.13 dB& \\\hline\hline
 \lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{code/RFPL.m}
 
 %%-----------------------------------------------------------------------
-%\hrule
-%\bibliographystyle{plain}
-%\bibliography{refer}
+
+\vfill
+\hrule
+\bibliographystyle{plain}
+\bibliography{refer}
 
 %---------------------------------------------------------------------------
 \end{document}

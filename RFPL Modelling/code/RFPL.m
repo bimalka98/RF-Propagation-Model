@@ -3,7 +3,7 @@ clear; close all; clc
 %% ===  Free Space Path Loss with Frequency ====
 
 %Defining the frequency range in GigaHertz
-f_GHz = 10:1000;
+f_GHz = 50:1000;
 %Free Space Path Loss Model obtained from calculations
 freeSpaceLoss = 112.44778322 + 20*log10(f_GHz);
 
@@ -14,6 +14,7 @@ grid on;
 xlabel('Frequency in GHz');
 ylabel('Free Space Path Loss in dB');
 title('Free Space Path Loss');legend('FreeSpacePL');
+saveas(gcf,'FreeSpacePL.png');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -37,6 +38,7 @@ xlabel('Frequency in GHz');
 ylabel('Rain Attenuation in dB')
 title('Rain Attenuation for Horizontal Polarization');
 legend('RainPL');
+saveas(gcf,'RainPL.png');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -55,12 +57,13 @@ grid on;
 xlabel('Frequency in GHz');
 ylabel('Fog Attenuation in dB')
 title('Fog Attenuation');legend('FogPL');
+saveas(gcf,'FogPL.png');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 %% ===  Atmospheric Gases Attenuation with Frequency  ====
 
-rou = 30.4;     % Water Vapor Density in g/m^3 
+rou = 30.4;     % Water Vapor Density in g/m^3
 p =  101325;    % Atmospheric Pressure in Pa at sea level
 
 % calculating Fog Attenuation
@@ -73,6 +76,7 @@ grid on;
 xlabel('Frequency in GHz');
 ylabel('Atmospheric Gases Attenuation in dB')
 title('Atmospheric Gases Attenuation');legend('GasPL');
+saveas(gcf,'GasPL.png');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -89,13 +93,14 @@ grid on;
 xlabel('Frequency in GHz');
 ylabel('Total Path Loss in dB')
 title('Total Path Loss'); legend('TotalPL')
+saveas(gcf,'TotalPL.png');
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 %% ===== To view all losses on the same figure =====
 
 figure;
-loglog(f_GHz,freeSpaceLoss,  'LineWidth', 2); 
+loglog(f_GHz,freeSpaceLoss,  'LineWidth', 2);
 hold on;
 loglog(f_GHz,rainAttenuation, 'LineWidth', 2);
 loglog(f_GHz,fogAttenuation, 'LineWidth', 2);
@@ -106,3 +111,4 @@ xlabel('Frequency in GHz');
 ylabel('Path Loss in dB')
 title('Propagation Losses with Frequency')
 legend('FreeSpacePL','RainPL','FogPL','GasPL','TotalPL');
+saveas(gcf,'AllinOne.png');

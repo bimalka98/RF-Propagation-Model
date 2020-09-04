@@ -1,3 +1,16 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{matlab}
+Modeling the {Propagation} of {RF} {Signals} - {MATLAB} \& {Simulink} -
+  {MathWorks} {India}.
+
+\bibitem{gas}
+P.676 : {Attenuation} by atmospheric gases.
+
+\bibitem{rain}
+P.838 : {Specific} attenuation model for rain for use in prediction methods.
+
+\bibitem{fog}
+P.840 : {Attenuation} due to clouds and fog.
 
 \end{thebibliography}

@@ -1,5 +1,8 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Document.aux
 The style file: plain.bst
-I found no \citation commands---while reading file Document.aux
 Database file #1: refer.bib
-(There was 1 error message)
+Warning--to sort, need author or key in rain
+Warning--to sort, need author or key in fog
+Warning--to sort, need author or key in gas
+Warning--to sort, need author or key in matlab
+(There were 4 warnings)

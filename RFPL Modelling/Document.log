@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2020.2.29)  3 SEP 2020 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2020.2.29)  4 SEP 2020 18:28
 entering extended mode
 **./Document.tex
 (Document.tex
@@ -609,7 +609,23 @@ Package: listings 2019/02/27 1.8b (Carsten Heinz)
 \jayDepth@mlpr=\skip65
 \sectionRuleOffset@mlpr=\skip66
 \toks@mlpr=\toks26
-) (Document.aux)
+) (Document.aux
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
 \openout1 = `Document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -628,8 +644,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 8.
-
-("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+ ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 8.
@@ -732,7 +747,7 @@ Package gensymb Info: Using \textmu for \micro on input line 8.
 
 \c@lstlisting=\count159
 (content/title_page.tex
-<figures/uomlogo.png, id=39, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=47, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
@@ -776,19 +791,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
-<figures/fspl.png, id=64, 1224.82594pt x 642.14906pt>
-File: figures/fspl.png Graphic file (type png)
-<use figures/fspl.png>
-Package pdftex.def Info: figures/fspl.png  used on input line 77.
-(pdftex.def)             Requested size: 428.6955pt x 224.75554pt.
+<code/FreeSpacePL.png, id=81, 421.575pt x 316.0608pt>
+File: code/FreeSpacePL.png Graphic file (type png)
+<use code/FreeSpacePL.png>
+Package pdftex.def Info: code/FreeSpacePL.png  used on input line 77.
+(pdftex.def)             Requested size: 316.18047pt x 237.04501pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2]
-Underfull \hbox (badness 1983) in paragraph at lines 87--88
-\OT1/cmr/m/it/10.95 Note : For the gen-er-a-tion of fol-low-ing plots three of 
-the Mat-lab built-in func-tions,
- []
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\NAT@ctype' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 90.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
@@ -800,50 +838,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
  []
 
-<figures/rpl.png, id=75, 1216.545pt x 645.16031pt>
-File: figures/rpl.png Graphic file (type png)
-<use figures/rpl.png>
-Package pdftex.def Info: figures/rpl.png  used on input line 102.
-(pdftex.def)             Requested size: 425.79713pt x 225.80948pt.
+<code/RainPL.png, id=96, 421.575pt x 316.0608pt>
+File: code/RainPL.png Graphic file (type png)
+<use code/RainPL.png>
+Package pdftex.def Info: code/RainPL.png  used on input line 102.
+(pdftex.def)             Requested size: 316.18047pt x 237.04501pt.
+[3 <./code/FreeSpacePL.png (PNG copy)> <./code/RainPL.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\NAT@ctype' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 106.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[3 <./figures/fspl.png> <./figures/rpl.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 109--113
 
  []
 
-<figures/fpl.png, id=82, 1218.80344pt x 640.64343pt>
-File: figures/fpl.png Graphic file (type png)
-<use figures/fpl.png>
-Package pdftex.def Info: figures/fpl.png  used on input line 116.
-(pdftex.def)             Requested size: 426.5876pt x 224.22856pt.
-<figures/gpl.png, id=83, 1231.60126pt x 637.63219pt>
-File: figures/gpl.png Graphic file (type png)
-<use figures/gpl.png>
-Package pdftex.def Info: figures/gpl.png  used on input line 132.
-(pdftex.def)             Requested size: 431.0669pt x 223.1746pt.
-<figures/all.png, id=84, 973.7178pt x 510.708pt>
-File: figures/all.png Graphic file (type png)
-<use figures/all.png>
-Package pdftex.def Info: figures/all.png  used on input line 138.
-(pdftex.def)             Requested size: 438.16898pt x 229.81647pt.
+<code/FogPL.png, id=105, 421.575pt x 316.0608pt>
+File: code/FogPL.png Graphic file (type png)
+<use code/FogPL.png>
+Package pdftex.def Info: code/FogPL.png  used on input line 116.
+(pdftex.def)             Requested size: 316.18047pt x 237.04501pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\begingroup' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\NAT@ctype' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\let' on input line 120.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 120.
+
+<code/GasPL.png, id=107, 421.575pt x 316.0608pt>
+File: code/GasPL.png Graphic file (type png)
+<use code/GasPL.png>
+Package pdftex.def Info: code/GasPL.png  used on input line 132.
+(pdftex.def)             Requested size: 316.18047pt x 237.04501pt.
+<code/AllinOne.png, id=108, 421.575pt x 316.0608pt>
+File: code/AllinOne.png Graphic file (type png)
+<use code/AllinOne.png>
+Package pdftex.def Info: code/AllinOne.png  used on input line 138.
+(pdftex.def)             Requested size: 316.18047pt x 237.04501pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/tpl.png, id=85, 1227.08438pt x 642.90187pt>
-File: figures/tpl.png Graphic file (type png)
-<use figures/tpl.png>
-Package pdftex.def Info: figures/tpl.png  used on input line 146.
-(pdftex.def)             Requested size: 429.48596pt x 225.01903pt.
-[4 <./figures/fpl.png> <./figures/gpl.png>]
+<code/TotalPL.png, id=109, 421.575pt x 316.0608pt>
+File: code/TotalPL.png Graphic file (type png)
+<use code/TotalPL.png>
+Package pdftex.def Info: code/TotalPL.png  used on input line 146.
+(pdftex.def)             Requested size: 316.18047pt x 237.04501pt.
+[4 <./code/FogPL.png (PNG copy)> <./code/GasPL.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--165
 
  []
 
-[5 <./figures/all.png> <./figures/tpl.png>]
+[5 <./code/AllinOne.png (PNG copy)> <./code/TotalPL.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
@@ -870,29 +965,22 @@ LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 12.
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmtt.fd"
 File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-[7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
+[7] [8]) (Document.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
  (Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
-
-
-Package rerunfilecheck Warning: File `Document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Document.out':
-(rerunfilecheck)             Before: EA62F4D1A54A14FF3E7290A34E8D4F2E;897
-(rerunfilecheck)             After:  40224E1F7E3E7A3309639216B0BAD4D7;1062.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package rerunfilecheck Info: File `Document.out' has not changed.
+(rerunfilecheck)             Checksum: 8DEC5B8EA256D4715BB6309DD3DF0C08;1122.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 10566 strings out of 492942
- 152019 string characters out of 3126660
- 447305 words of memory out of 3000000
- 14150 multiletter control sequences out of 15000+200000
+ 10599 strings out of 492942
+ 152521 string characters out of 3126660
+ 453612 words of memory out of 3000000
+ 14168 multiletter control sequences out of 15000+200000
  12302 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,120p,440b,2264s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -911,9 +999,9 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ASUS/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ASUS/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ASUS/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Document.pdf (9 pages, 579812 bytes).
+Output written on Document.pdf (10 pages, 562142 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
