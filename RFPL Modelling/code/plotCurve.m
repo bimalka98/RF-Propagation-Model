@@ -30,6 +30,6 @@ end
 
 legend(inputArg2);
 saveas(gcf,strcat(inputArg2,'.png'));
-fprintf('Program paused. Press enter to continue.\n');
-pause;
+%fprintf('Program paused. Press enter to continue.\n');
+%pause;
 end

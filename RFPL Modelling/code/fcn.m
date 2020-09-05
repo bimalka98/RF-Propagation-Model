@@ -1,7 +1,7 @@
 function y = fcn(u)
 
 %Variable Definition
-f_GHz = 11;    %Carrier Frequency
+f_GHz = 50;    %Carrier Frequency
 freq = f_GHz*1e9*ones(size(u))' + real(u);
 range = 10e3;  % Distance between transmitter and receiver in m
 rainrate = 20; % Rain rate in mm/h

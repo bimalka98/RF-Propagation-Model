@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2020.2.29)  5 SEP 2020 00:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2020.2.29)  5 SEP 2020 03:53
 entering extended mode
 **./Document.tex
 (Document.tex
@@ -791,16 +791,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
-<figures/FreeSpacePL.png, id=81, 1445.4pt x 704.6325pt>
+<figures/FreeSpacePL.png, id=81, 1218.80344pt x 647.41875pt>
 File: figures/FreeSpacePL.png Graphic file (type png)
 <use figures/FreeSpacePL.png>
 Package pdftex.def Info: figures/FreeSpacePL.png  used on input line 77.
-(pdftex.def)             Requested size: 505.89758pt x 246.62508pt.
-
-Overfull \hbox (50.65347pt too wide) in paragraph at lines 77--78
- [][] 
- []
-
+(pdftex.def)             Requested size: 426.5876pt x 226.59995pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -843,19 +838,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
  []
 
-<figures/RainPL.png, id=96, 1445.4pt x 704.6325pt>
+<figures/RainPL.png, id=96, 1218.05063pt x 646.66594pt>
 File: figures/RainPL.png Graphic file (type png)
 <use figures/RainPL.png>
 Package pdftex.def Info: figures/RainPL.png  used on input line 102.
-(pdftex.def)             Requested size: 505.89758pt x 246.62508pt.
-
-Overfull \hbox (50.65347pt too wide) in paragraph at lines 102--103
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+(pdftex.def)             Requested size: 426.32411pt x 226.33646pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 106.
@@ -889,24 +876,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-
+[3 <./figures/FreeSpacePL.png> <./figures/RainPL.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 109--113
 
  []
 
-<figures/FogPL.png, id=98, 1445.4pt x 704.6325pt>
+<figures/FogPL.png, id=105, 1212.78094pt x 645.16031pt>
 File: figures/FogPL.png Graphic file (type png)
 <use figures/FogPL.png>
 Package pdftex.def Info: figures/FogPL.png  used on input line 116.
-(pdftex.def)             Requested size: 505.89758pt x 246.62508pt.
-
-Overfull \hbox (50.65347pt too wide) in paragraph at lines 116--117
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+(pdftex.def)             Requested size: 424.47969pt x 225.80948pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 120.
@@ -935,51 +914,30 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 120.
 
-<figures/GasPL.png, id=100, 1445.4pt x 704.6325pt>
+<figures/GasPL.png, id=107, 1230.84843pt x 648.17157pt>
 File: figures/GasPL.png Graphic file (type png)
 <use figures/GasPL.png>
 Package pdftex.def Info: figures/GasPL.png  used on input line 132.
-(pdftex.def)             Requested size: 505.89758pt x 246.62508pt.
-
-Overfull \hbox (50.65347pt too wide) in paragraph at lines 132--133
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/AllinOne.png, id=101, 1445.4pt x 704.6325pt>
+(pdftex.def)             Requested size: 430.8034pt x 226.86345pt.
+<figures/AllinOne.png, id=108, 1212.02812pt x 645.16031pt>
 File: figures/AllinOne.png Graphic file (type png)
 <use figures/AllinOne.png>
 Package pdftex.def Info: figures/AllinOne.png  used on input line 138.
-(pdftex.def)             Requested size: 505.89758pt x 246.62508pt.
-
-Overfull \hbox (50.65347pt too wide) in paragraph at lines 138--139
- [][] 
- []
-
+(pdftex.def)             Requested size: 424.2162pt x 225.80948pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/TotalPL.png, id=102, 1445.4pt x 661.72218pt>
+<figures/TotalPL.png, id=109, 1221.81468pt x 608.2725pt>
 File: figures/TotalPL.png Graphic file (type png)
 <use figures/TotalPL.png>
 Package pdftex.def Info: figures/TotalPL.png  used on input line 146.
-(pdftex.def)             Requested size: 505.89758pt x 231.60623pt.
-
-Overfull \hbox (50.65347pt too wide) in paragraph at lines 146--147
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[3 <./figures/FreeSpacePL.png (PNG copy)>]
+(pdftex.def)             Requested size: 427.64154pt x 212.89856pt.
+[4 <./figures/FogPL.png> <./figures/GasPL.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 154--165
 
  []
 
-[4 <./figures/RainPL.png (PNG copy)> <./figures/FogPL.png (PNG copy)>]
+[5 <./figures/AllinOne.png> <./figures/TotalPL.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
@@ -994,8 +952,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[5 <./figures/GasPL.png (PNG copy)> <./figures/AllinOne.png (PNG copy)>]
-[6 <./figures/TotalPL.png (PNG copy)>]
+[6]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 198.
  (code/RFPL.m
@@ -1021,7 +978,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
 Here is how much of TeX's memory you used:
  10568 strings out of 492942
  152169 string characters out of 3126660
- 459979 words of memory out of 3000000
+ 460008 words of memory out of 3000000
  14172 multiletter control sequences out of 15000+200000
  12302 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1041,7 +998,7 @@ nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ASUS/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ASUS/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ASUS/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on Document.pdf (9 pages, 644044 bytes).
+Output written on Document.pdf (9 pages, 556806 bytes).
 PDF statistics:
  280 PDF objects out of 1000 (max. 8388607)
  109 named destinations out of 1000 (max. 500000)
