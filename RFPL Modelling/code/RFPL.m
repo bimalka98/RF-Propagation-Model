@@ -5,10 +5,10 @@ clear; close all; clc
 %Defining the frequency range in GigaHertz
 f_GHz = 50:1000;
 %Free Space Path Loss Model obtained through calculations
-freeSpaceLoss = 112.44778322 + 20*log10(f_GHz);
+freeSpaceLoss1 = 112.44778322 + 20*log10(f_GHz);
 
 % Plotting Data
-plotCurve(freeSpaceLoss, 'FreeSpacePL')
+plotCurve(freeSpaceLoss1, 'FreeSpacePL')
 
 %% == Rain, Fog, Atmospheric Gases Attenuations with Frequency ==
 
@@ -35,7 +35,32 @@ plotCurve(gasAttenuation, 'GasPL');
 %% ============ Total Propagation Loss with Frequency ============
 
 % Calculating Total Attenuation
-Totalpathloss = freeSpaceLoss + rainAttenuation + ...
+Totalpathloss = freeSpaceLoss1 + rainAttenuation + ...
                                 fogAttenuation +gasAttenuation;
 % Plotting Data
 plotCurve(Totalpathloss, 'TotalPL');
+
+%% ======= Variation of the Signal Power with the Distance =======
+
+distance = 0:10e3; % Distance between transmitter and receiver in m
+freq = 50*1e9;     % Choosen frequency value in Hertz
+
+% Calculating Attenuations with Distance
+freeSpaceLoss2 = 126.4271833 + 20*log10(distance/(10e3));
+rainAttenuation = rainpl(distance,freq,rainrate,elev,tau);
+fogAttenuation = fogpl(distance,freq,temp,dens);
+gasAttenuation = gaspl(distance,freq,temp, p, rou);
+
+% Total Path Loss with Distancce
+TotalLosswithDistance = freeSpaceLoss2' + rainAttenuation + ...
+                                fogAttenuation +gasAttenuation;
+
+% Calculating the signal Power with the distance
+signalPower =  74 - TotalLosswithDistance;
+
+% Plotting Data
+plot(distance/10e2, signalPower, 'r','LineWidth', 2);
+grid on;
+xlabel('Distance (km)');
+ylabel('Signal Power (dB)');
+title('Variation of the Signal Power with the Distance');

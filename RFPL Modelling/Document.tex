@@ -48,7 +48,7 @@ By considering $\ 10.log_{10}()$ in both sides, Free Space Path Loss in dB, say 
 
 \[
 \begin{split}
-\log_{10}(L) &= 10.\log_{10}(\frac{(4\pi.f.d)^2}{c^2})\\
+10.\log_{10}(L) &= 10.\log_{10}(\frac{(4\pi.f.d)^2}{c^2})\\
 L_{dB}& = 10.\log_{10}((4\pi.f.d)^2) - 10.\log_{10}(c^2)\\
 &=20.\log_{10}(4\pi.f.d)-20.\log_{10}(c)\\
 &=20.\log_{10}(4\pi)-20.\log_{10}(c) + 20.\log_{10}(f) + 20.\log_{10}(d)\\
@@ -187,7 +187,56 @@ By inspecting the figure we can conclude that the minimum propagation loss is gi
 %	\end{tabular}
 %\end{center}
 
+\pagebreak
 \subsection{Variation of the Signal Power with the Distance}
+
+Parameters For the propagation model\\
+
+\begin{tabular}{l r}
+Chosen transmission frequency & 50 GHz\\
+Transmission power & 50 kW or 47 dB\\
+Cable loss at Transmitter & 3 dB\\
+Transmitter Gain & 30 dB\\
+Receiver Gain &24.77 dB\\
+Cable loss at Receiver &4 dB\\
+Total Path Loss & Varies with Distance\\
+\end{tabular}\\[1cm]
+
+According to above values, Let's calculate the Power of the signal when leaving the  Transmission antenna, say $P_{dB}(0~km)$,
+
+\[
+\begin{split}
+P_{dB}(0~km) & = Transmission~power -  Cable~loss~at~Transmitter + Transmitter~Gain\\
+&=47-3+30\\
+&=74~dB
+\end{split}
+\]
+
+Free Space Path Loss in dB, $L_{dB}$ as a function of distance in kilo meters. By substituting $f_{GHz}$ = 50 to the equation derived in part 1.
+
+\[
+\begin{split}
+L_{dB}(d_{km})&= +92.44778322+20.\log_{10}(50) + 20.\log_{10}(d_{km})\\
+&=+92.44778322+ 33.97940009 + 20.\log_{10}(d_{km})\\
+&=+126.4271833+ 20.\log_{10}(d_{km})\\
+\end{split}
+\]
+
+Therefore, \[Total~Path~Loss = L_{dB}(d_{km}) + Rain~Attenuation+Fog~Attenuation+Atmospheric~Gas~Attenuation \]
+
+Therefore the Signal Power when reaching the Receiving Antenna at $d_{km}$ distance,
+\[
+\begin{split}
+P_{dB}(d_{km}) & =74~dB - Total~Path~Loss
+\end{split}
+\]
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/sp}
+	\caption{Variation of the Signal Power with the Distance}
+\end{figure}
+\pagebreak
 
 \subsection{Transmitting a voice signal over a noisy channel using the above Transmission frequency and the Propagation model.}
 
@@ -202,10 +251,11 @@ By inspecting the figure we can conclude that the minimum propagation loss is gi
 
 \lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = 
 Matlab-editor]{code/plotCurve.m}
+\vfill
 %%-----------------------------------------------------------------------
 
-\vfill
-\hrule
+
+
 \bibliographystyle{plain}
 \bibliography{refer}
 

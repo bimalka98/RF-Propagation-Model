@@ -16,20 +16,20 @@ elseif strcmp(inputArg2, 'RainPL')
      title('Rain Attenuation for Horizontal Polarization');
 
 elseif strcmp(inputArg2, 'FogPL')
-     ylabel('Fog Attenuation (dB)')
+     ylabel('Fog Attenuation (dB)');
      title('Fog Attenuation');
 
 elseif strcmp(inputArg2, 'GasPL')
-     ylabel('Atmospheric Gases Attenuation (dB)');
+     ylabel('Atmospheric Gases Attenuation (dB)');     
      title('Atmospheric Gases Attenuation');
 
 elseif strcmp(inputArg2, 'TotalPL')
-     ylabel('Total Path Loss (dB)')
-     title('Total Path Loss');
+     ylabel('Total Path Loss (dB)');
+     title('Total Path Loss');         
 end
 
 legend(inputArg2);
-saveas(gcf,strcat(inputArg2,'.png'));
-%fprintf('Program paused. Press enter to continue.\n');
-%pause;
+%saveas(gcf,strcat(inputArg2,'.png'));
+fprintf('Program paused. Press enter to continue.\n');
+pause;
 end
