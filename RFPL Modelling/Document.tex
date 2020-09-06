@@ -252,10 +252,24 @@ P_{dB}(d_{km}) & =74~dB - Total~Path~Loss
 \lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = 
 Matlab-editor]{code/plotCurve.m}
 \vfill
+
+\section{Implementing a Simplified Version of the Dynamic Source Routing(DSR) Protocol in Ad Hoc Wireless Networks}
 %%-----------------------------------------------------------------------
+\subsection{Assumptions used in the implementation}
+\begin{itemize}
+	\item Transmission ranges of all the nodes is the same and hence bidirectional communication is possible between two neighboring nodes
+	\item Therefore, the source route of the RREP(Route Reply) is replaced with source route of RREQ(Route Request) packet.
+	\item Route maintenance found in original DSR protocol is skipped for simplicity.
+\end{itemize}
 
+\subsection{Implementation of DSR in Python}
 
+\subsection{Improving the Efficiency of Protocol by further Exploiting the Route Cache}
 
+\subsection{Handling Disconnections During Transmission}
+
+\subsection{Differences between DSR protocol  and Distance Vector Routing protocol}
+\vfill
 \bibliographystyle{plain}
 \bibliography{refer}
 
