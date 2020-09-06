@@ -133,11 +133,7 @@ The plot below shows how the propagation loss due to atmospheric gases varies wi
 	\caption{Relationship between Atmospheric gas attenuation and Frequency}
 \end{figure}
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale=0.35]{figures/AllinOne.png}
-	\caption{Relationship between Various Path Losses and Frequency - All in One}
-\end{figure}
+
 %%-----------------------------------------------------------------------
 \subsection{Total Path Loss with Frequency}
 \textit{Note : Range of frequency was chosen from 50 GHz to 1000 GHz since some of the ITU-R models are only defined in 10 GHz - 1000 GHz range.}
@@ -147,44 +143,51 @@ The plot below shows how the propagation loss due to atmospheric gases varies wi
 	\caption{Relationship between Total Path Loss and Frequency}
 \end{figure}
 
-By inspecting the figure we can conclude that the minimum propagation loss is given at the frequency of 10 GHz. Therefore from this point onward, for the calculations it will be the frequency for transmission.
+By inspecting the figure we can conclude that the minimum propagation loss is given at the frequency of 50 GHz in the given range. Therefore from this point onward, for the calculations it will be the frequency for transmission.
 
-\subsection{Link Budget Calculation}
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale=0.35]{figures/AllinOne.png}
+	\caption{Relationship between Various Path Losses and Frequency - All in One}
+\end{figure}
+%\subsection{Link Budget Calculation}
+%
+%Parameters For the propagation model
+%\begin{tabular}{l r}
+%Chosen transmission frequency & 10 GHz\\
+%Total Path Loss & 136.9 dB\\
+%Transmission power & 50 kW or 47 dB\\
+%Transmitter Gain & 30 dB\\
+%Receiver Gain &24.77 dB\\
+%Link margin  &11 dB\\
+%Cable loss at Transmitter & 3 dB\\
+%Cable loss at Receiver &4 dB\\
+%\end{tabular}\\[1cm]
+%
+%Let's find the actual received power at the receiver\\
+%
+%\begin{tabular}{|l l| r|}
+%	\hline
+%Received Power =	&Transmission power & +47 dB\\
+%&	Cable loss at Transmitter & -3 dB\\
+%&	Transmitter Gain & 30 dB\\
+%&	Total Path Loss & -136.9 dB\\
+%&	Receiver Gain &+24.77 dB\\
+%&	Cable loss at Receiver &-4 dB\\\hline
+%Received Power =&&-42.13 dB\\\hline\hline
+%\end{tabular}\\[1cm]
+%
+%
+%Therefore,\\
+%\begin{center}
+%	\begin{tabular}{l c c c}
+%Link margin  & =& Received Power& - Receiver Sensitivity\\
+%11 dB& = &-42.13 dB& - Receiver Sensitivity\\
+%Receiver Sensitivity &= &-53.13 dB& \\\hline\hline
+%	\end{tabular}
+%\end{center}
 
-Parameters For the propagation model
-\begin{tabular}{l r}
-Chosen transmission frequency & 10 GHz\\
-Total Path Loss & 136.9 dB\\
-Transmission power & 50 kW or 47 dB\\
-Transmitter Gain & 30 dB\\
-Receiver Gain &24.77 dB\\
-Link margin  &11 dB\\
-Cable loss at Transmitter & 3 dB\\
-Cable loss at Receiver &4 dB\\
-\end{tabular}\\[1cm]
-
-Let's find the actual received power at the receiver\\
-
-\begin{tabular}{|l l| r|}
-	\hline
-Received Power =	&Transmission power & +47 dB\\
-&	Cable loss at Transmitter & -3 dB\\
-&	Transmitter Gain & 30 dB\\
-&	Total Path Loss & -136.9 dB\\
-&	Receiver Gain &+24.77 dB\\
-&	Cable loss at Receiver &-4 dB\\\hline
-Received Power =&&-42.13 dB\\\hline\hline
-\end{tabular}\\[1cm]
-
-
-Therefore,\\
-\begin{center}
-	\begin{tabular}{l c c c}
-Link margin  & =& Received Power& - Receiver Sensitivity\\
-11 dB& = &-42.13 dB& - Receiver Sensitivity\\
-Receiver Sensitivity &= &-53.13 dB& \\\hline\hline
-	\end{tabular}
-\end{center}
+\subsection{Variation of the Signal Power with the Distance}
 
 \subsection{Transmitting a voice signal over a noisy channel using the above Transmission frequency and the Propagation model.}
 
