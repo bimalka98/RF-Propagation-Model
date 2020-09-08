@@ -46,7 +46,7 @@ distance = 0:10e3; % Distance between transmitter and receiver in m
 freq = 50*1e9;     % Choosen frequency value in Hertz
 
 % Calculating Attenuations with Distance
-freeSpaceLoss2 = 126.4271833 + 20*log10(distance/(10e3));
+freeSpaceLoss2 = 126.4271833 + 20*log10(distance/(10e2));
 rainAttenuation = rainpl(distance,freq,rainrate,elev,tau);
 fogAttenuation = fogpl(distance,freq,temp,dens);
 gasAttenuation = gaspl(distance,freq,temp, p, rou);
