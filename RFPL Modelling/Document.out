@@ -1,4 +1,4 @@
-\BOOKMARK [1][-]{section.1}{Modeling the RF propagation Model Using Matlab}{}% 1
+\BOOKMARK [1][-]{section.1}{Modeling the RF propagation Using Matlab}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Relationship between Free Space Path Loss and Frequency}{section.1}% 2
 \BOOKMARK [2][-]{subsection.1.2}{Rain attenuation, Fog attenuation and Atmospheric gas attenuation with Frequency}{section.1}% 3
 \BOOKMARK [3][-]{subsubsection.1.2.1}{Rain attenuation - Recommendation ITU-R P.838-3, 2005rain}{subsection.1.2}% 4
@@ -7,11 +7,12 @@
 \BOOKMARK [2][-]{subsection.1.3}{Total Path Loss with Frequency}{section.1}% 7
 \BOOKMARK [2][-]{subsection.1.4}{Variation of the Signal Power with the Distance}{section.1}% 8
 \BOOKMARK [2][-]{subsection.1.5}{Transmitting a voice signal over a noisy channel using the above Transmission frequency and the Propagation model.}{section.1}% 9
-\BOOKMARK [2][-]{subsection.1.6}{Codes and Models for Task 1}{section.1}% 10
-\BOOKMARK [1][-]{section.2}{Implementing a Simplified Version of the Dynamic Source Routing\(DSR\) Protocol in Ad Hoc Wireless Networks}{}% 11
-\BOOKMARK [2][-]{subsection.2.1}{Assumptions used in the implementation}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.2}{Implementation of DSR in Python}{section.2}% 13
-\BOOKMARK [2][-]{subsection.2.3}{Improving the Efficiency of Protocol by further Exploiting the Route Cache}{section.2}% 14
-\BOOKMARK [2][-]{subsection.2.4}{Handling Disconnections During Transmission}{section.2}% 15
-\BOOKMARK [2][-]{subsection.2.5}{Differences between DSR protocol and Distance Vector Routing protocol}{section.2}% 16
-\BOOKMARK [1][-]{section*.2}{Bibliography}{}% 17
+\BOOKMARK [3][-]{subsubsection.1.5.1}{RF Propagation Model - Simulink}{subsection.1.5}% 10
+\BOOKMARK [2][-]{subsection.1.6}{Codes for Task 1}{section.1}% 11
+\BOOKMARK [1][-]{section.2}{Implementing a Simplified Version of the Dynamic Source Routing\(DSR\) Protocol in Ad Hoc Wireless Networks}{}% 12
+\BOOKMARK [2][-]{subsection.2.1}{Assumptions used in the implementation}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.2}{Implementation of DSR in Python}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.3}{Improving the Efficiency of Protocol by further Exploiting the Route Cache}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.4}{Handling Disconnections During Transmission}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.5}{Differences between DSR protocol and Distance Vector Routing protocol}{section.2}% 17
+\BOOKMARK [1][-]{section*.2}{Bibliography}{}% 18

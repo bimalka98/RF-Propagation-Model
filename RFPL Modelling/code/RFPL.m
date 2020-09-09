@@ -13,7 +13,7 @@ plotCurve(freeSpaceLoss1, 'FreeSpacePL')
 %% == Rain, Fog, Atmospheric Gases Attenuations with Frequency ==
 
 freq = f_GHz*1e9;% Defining the frequency range in Hertz
-range = 10e3;    % Distance between transmitter and receiver in m
+range = 10e3;    % Distance between transceivers in m
 rainrate = 20;   % Rain rate in mm/h
 elev = 0;        % Elevation angle of the propagation path
 tau = 0;         % Polarization tilt angle of the signal
@@ -42,7 +42,7 @@ plotCurve(Totalpathloss, 'TotalPL');
 
 %% ======= Variation of the Signal Power with the Distance =======
 
-distance = 0:10e3; % Distance between transmitter and receiver in m
+distance = 0:10e3; % Distance between transceivers in m
 freq = 50*1e9;     % Choosen frequency value in Hertz
 
 % Calculating Attenuations with Distance
@@ -59,8 +59,38 @@ TotalLosswithDistance = freeSpaceLoss2' + rainAttenuation + ...
 signalPower =  74 - TotalLosswithDistance;
 
 % Plotting Data
+figure;
 plot(distance/10e2, signalPower, 'r','LineWidth', 2);
 grid on;
 xlabel('Distance (km)');
 ylabel('Signal Power (dB)');
 title('Variation of the Signal Power with the Distance');
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
+%% ==Sending Voice Signal Over a Noisy Channel - Associated Logic==
+
+freqDeviation = 4000; % Frequency Deviation of the Voice signal
+CarrierFreq = 50e9;   % Carrier Frequency
+
+% Frequency range of the Transmitted Signal
+freqRange = CarrierFreq - freqDeviation :...
+                    CarrierFreq + freqDeviation;
+
+% Calculating Losses
+freeSpaceLoss3 = 112.44778322 + 20*log10(freqRange/(1e9));
+rainAttenuation = rainpl(range,freqRange,rainrate,elev,tau);
+fogAttenuation = fogpl(range,freqRange,temp,dens);
+gasAttenuation = gaspl(range,freqRange,temp, p, rou);
+
+% Total Path Loss in the given Frequency Range
+TotalPathLoss = freeSpaceLoss3 + rainAttenuation + ...
+                                fogAttenuation +gasAttenuation;
+% Plotting Data
+figure;
+plot(freqRange, TotalPathLoss, 'r', 'LineWidth', 2);
+grid on;
+xlabel('Frequency (Hz)');
+ylabel('Total Path Loss (dB)');
+title('Variation of the Path Loss with Frequency');
