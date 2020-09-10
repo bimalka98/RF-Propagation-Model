@@ -1,5 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{dsr1}
+Cisco {CCNA} – {Distance} {Vector} {Routing} {Protocols} –
+  {CertificationKits}.com.
+\newblock
+  \url{https://www.certificationkits.com/cisco-certification/ccna-articles/cisco-ccna-intro-to-routing-basics/cisco-ccna-distance-vector-routing-protocols/}.
+
+\bibitem{dsr2}
+{IMPLEMENTATION} {OF} {DYNAMIC} {SOURCE} {ROUTING}.
+\newblock \url{http://www.cse.iitd.ac.in/~mcs142144/documents/DSR_thesis.pdf}.
+
 \bibitem{matlab}
 Modeling the {Propagation} of {RF} {Signals} - {MATLAB} \& {Simulink} -
   {MathWorks} {India}.

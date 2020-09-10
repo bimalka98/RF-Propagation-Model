@@ -4,14 +4,14 @@
 \input{settings/page}
 \input{settings/macros}
 \usepackage[ framed, numbered]{matlab-prettifier}%framed,%
-
+\usepackage{listings}
 \begin{document}
 
 \input{content/title_page}
 \tableofcontents
 
 \begin{center}
-	\textbf{\textit{*PDF is clickable}}
+	\textbf{\textit{* PDF is clickable}}
 \end{center}
 \pagebreak
 %%-----------------------------------------------------------------------
@@ -255,7 +255,7 @@ P_{dB}(d_{km}) & =74~dB - Total~Path~Loss
 	\caption{Variation of the Path Loss with Frequency in the Voice Signal}
 \end{figure}
 
-By inspecting the above figure, it can be concluded that the total Path Loss of the modulated Voice Signal is almost the same as that of the carrier wave (50 GHz) and therefore path loss variation due to the frequency in the above range can be neglected and can be assumed as a constant of 214.6240 dB.\\ 
+By inspecting the above figure, it can be concluded that the total Path Loss of the modulated Voice Signal is almost the same as that of the carrier wave (50 GHz) and therefore path loss variation due to the frequency in the above range can be neglected and can be assumed as a constant of 214.6240 dB.\\
 Therefore for the following model, total path loss of the signal was taken as 214.6240 dB and it is included in the Free Space Loss block.
 
 \subsubsection{RF Propagation Model - Simulink}
@@ -277,30 +277,95 @@ Therefore for the following model, total path loss of the signal was taken as 21
 \subsection{Codes for Task 1}
 \lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{code/RFPL.m}
 
-\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = 
+\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style =
 Matlab-editor]{code/plotCurve.m}
 \vfill
-
 \pagebreak
+
 %=================================TASK TWO MANET============================
 
 \section{Implementing a Simplified Version of the Dynamic Source Routing(DSR) Protocol in Ad Hoc Wireless Networks}
 %%-----------------------------------------------------------------------
-\subsection{Assumptions used in the implementation}
-\begin{itemize}
-	\item Transmission ranges of all the nodes is the same and hence bidirectional communication is possible between two neighboring nodes
-	\item Therefore, the source route of the RREP(Route Reply) is replaced with source route of RREQ(Route Request) packet.
-	\item Route maintenance found in original DSR protocol is skipped for simplicity.
-\end{itemize}
-
-\subsection{Implementation of DSR in Python}
 
 \subsection{Improving the Efficiency of Protocol by further Exploiting the Route Cache}
 
+\subsubsection{Derestricting route format}
+In the existing system, the entries in the route cache contain a specific format as [(target : route), (target : route) ..].
+This generates the following inefficiency.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.4]{figures/route}
+	\caption{A Route which is already in the Route Cache}
+\end{figure}
+
+Consider an instance where a packet has to be sent from node A to node C and also assume that the route to node D also exists in the route cache of A as (D : B, C, D)
+The node A is unable to extract the route to node C from this entry as node C is not listed as the target node. Instead another route reply packet has to be initiated to find the path to node C.
+If this format is derestricted and used in a manner such that the path to a node inside any entry can be extracted, the number of route request transmissions can be minimized, hence propagation time as well as CPU overhead required to process those packets is reduced.
+
+\subsubsection{Intermediate nodes resolving a route request using their route caches}
+In the existing system, once a node receives a route request, it checks to see if it is the target node for that packet and if not, it broadcasts the route request packet again.
+As an alternative, once a node receives a route request, the following algorithm can be implemented.
+
+\begin{verbatim}
+IF packet ID already processed
+   THEN skip packet
+ELSE
+   add packet ID to the recents list
+   IF current node is target node
+      THEN append current node ID to path and initiate RREP
+   ELSE IF the path to destination exists in the routing cache of current node
+      THEN append that route to path and initiate RREP
+   ELSE
+      append current node ID to path and broadcast
+\end{verbatim}
+
+This will enable the system to minimize route request transmissions.
+However, steps have to be taken to avoid processing multiple route reply packets from multiple nodes and to select the shortest path among them.
+
 \subsection{Handling Disconnections During Transmission}
 
+
+To make the process of handling disconnections more robust, we propose that an acknowledgement message be sent during each transmission. For example, in a situation where a data packet is to be sent from node A to node D using the path A-B-C-D,
+\begin{enumerate}[1.]
+	\item Node A send the packet to node B but still keeps the packet in a buffer
+	\item Node B receives the packet and sends an acknowledgement packet back to node A
+	\item Node A receives the acknowledgement packet and clears the packet from its buffer
+	\item The same process is repeated when the packet is sent from node B to node C and so on.
+\end{enumerate}
+
+A description on disconnections handling using this system follows.\\
+
+Scenario : A data packet is to be sent from node A to node D along the pre-discovered path A-B-C-D\\
+Error 	: Node C disconnects\\
+
+As per the above sequence of steps, node B sends the data packet to node C but does not receive an acknowledgment packet. Hence, the data packet is retained in the buffer and more attempts are made to resend the data packet to node C in an exponentially decreasing rate. In order to completely terminate the attempt to send the packet to node C, a maximum number of attempts is also specified.If node C does not respond after the maximum number of attempts, node C will initiate the error handling procedure.\\
+
+Node B will initially look into its own route cache and if there are any entries through C present in it, they will be removed. Secondly, a node error packet indicating the unavailability of node C will be transmitted to the source i.e. node A. Upon receiving this packet, node A will check its route cache for any entries containing node C. If such entries are found, they will be truncated at node C.
+
+
 \subsection{Differences between DSR protocol  and Distance Vector Routing protocol}
+
+Distance vector protocols rely on the information provided by the neighboring nodes. Each node periodically broadcasts the distance to every node within its transmission range. Based on this data, the source of a data packet computes the shortest path to the target by virtue of these distance values. The direction in this ‘vector’ routing protocol is embedded in the form of the nodes it passes\cite{dsr1}\cite{dsr2}.\\
+
+Example : ‘The target 192.168.1.0/24 is 4 hops away in direction of next-hop B’\\
+
+In dynamic source routing protocol, the sender itself decides the complete path that the packet has to take through a route discovery process and embeds the discovered path into the packet and hence the consequent nodes will merely have to check for the next hop and forward it accordingly.\\
+
+\textbf{Advantages of Dynamic source routing}
+
+\begin{itemize}
+	\item In a time interval where no data packets are transmitted, a distance vector protocol will continuously broadcast routing advertisement messages whereas in dynamic source routing, route discovery procedure takes place only when data packets are in buffer.
+\item These route advertisements employed in distance vector protocol also causes the nodes to process a large number of redundant messages which requires CPU overhead.
+\item In dynamic source routing, each node possesses a route cache which contains pre discovered routes to multiple nodes. Therefore in a scenario where there is little to no movement of the nodes, these routes can be easily utilized without a route discovery process.
+\item Even in a situation where node movement is significant, the route discovery process employed in dynamic source routing can yield in an effective route much faster than in the case of a distance vector routing protocol.
+
+\end{itemize}
+
+\subsection{Codes for Task 2}
+
 \vfill
+\hrule
+\vspace{1cm}
 \bibliographystyle{plain}
 \bibliography{refer}
 

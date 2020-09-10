@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.9)  9 SEP 2020 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.9)  9 SEP 2020 19:31
 entering extended mode
 **./Document.tex
 (Document.tex
@@ -504,7 +504,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.72 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -622,27 +622,29 @@ Package gensymb Info: Using \textmu for \micro on input line 8.
 
 \c@lstlisting=\count314
 (content/title_page.tex
-<figures/uomlogo.png, id=75, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=79, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
 (pdftex.def)             Requested size: 145.11053pt x 154.11925pt.
- [1
-Non-PDF special ignored!
-<special> header=psfrag.pro
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
 
-{C:/Users/ASUS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/uo
-mlogo.png>]) (Document.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
 
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+
 
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+[1
+Non-PDF special ignored!
+<special> header=psfrag.pro
+
+{C:/Users/ASUS/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/uo
+mlogo.png>]) (Document.toc)
 \tf@toc=\write6
 \openout6 = `Document.toc'.
 
@@ -666,7 +668,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-<figures/FreeSpacePL.png, id=118, 1218.80344pt x 647.41875pt>
+<figures/FreeSpacePL.png, id=123, 1218.80344pt x 647.41875pt>
 File: figures/FreeSpacePL.png Graphic file (type png)
 <use figures/FreeSpacePL.png>
 Package pdftex.def Info: figures/FreeSpacePL.png  used on input line 81.
@@ -713,7 +715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
 
-<figures/RainPL.png, id=132, 1218.05063pt x 646.66594pt>
+<figures/RainPL.png, id=137, 1218.05063pt x 646.66594pt>
 File: figures/RainPL.png Graphic file (type png)
 <use figures/RainPL.png>
 Package pdftex.def Info: figures/RainPL.png  used on input line 106.
@@ -756,7 +758,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--117
 
  []
 
-<figures/FogPL.png, id=141, 1212.78094pt x 645.16031pt>
+<figures/FogPL.png, id=146, 1212.78094pt x 645.16031pt>
 File: figures/FogPL.png Graphic file (type png)
 <use figures/FogPL.png>
 Package pdftex.def Info: figures/FogPL.png  used on input line 120.
@@ -789,12 +791,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 124.
 
-<figures/GasPL.png, id=144, 1230.84843pt x 648.17157pt>
+<figures/GasPL.png, id=149, 1230.84843pt x 648.17157pt>
 File: figures/GasPL.png Graphic file (type png)
 <use figures/GasPL.png>
 Package pdftex.def Info: figures/GasPL.png  used on input line 136.
 (pdftex.def)             Requested size: 430.8034pt x 226.86345pt.
-<figures/TotalPL.png, id=145, 1221.81468pt x 608.2725pt>
+<figures/TotalPL.png, id=150, 1221.81468pt x 608.2725pt>
 File: figures/TotalPL.png Graphic file (type png)
 <use figures/TotalPL.png>
 Package pdftex.def Info: figures/TotalPL.png  used on input line 146.
@@ -809,7 +811,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-<figures/AllinOne.png, id=153, 1212.02812pt x 645.16031pt>
+<figures/AllinOne.png, id=158, 1212.02812pt x 645.16031pt>
 File: figures/AllinOne.png Graphic file (type png)
 <use figures/AllinOne.png>
 Package pdftex.def Info: figures/AllinOne.png  used on input line 159.
@@ -824,18 +826,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--213
 
  []
 
-<figures/sp.png, id=160, 1231.60126pt x 636.87938pt>
+<figures/sp.png, id=165, 1231.60126pt x 636.87938pt>
 File: figures/sp.png Graphic file (type png)
 <use figures/sp.png>
 Package pdftex.def Info: figures/sp.png  used on input line 245.
 (pdftex.def)             Requested size: 431.0669pt x 222.91112pt.
 [6 <./figures/sp.png>]
-<figures/voicePL.png, id=167, 1322.69156pt x 638.385pt>
+<figures/voicePL.png, id=172, 1322.69156pt x 638.385pt>
 File: figures/voicePL.png Graphic file (type png)
 <use figures/voicePL.png>
 Package pdftex.def Info: figures/voicePL.png  used on input line 254.
 (pdftex.def)             Requested size: 476.1686pt x 229.81842pt.
-<figures/spect2.png, id=168, 1156.32pt x 545.03625pt>
+<figures/spect2.png, id=173, 1156.32pt x 545.03625pt>
 File: figures/spect2.png Graphic file (type png)
 <use figures/spect2.png>
 Package pdftex.def Info: figures/spect2.png  used on input line 265.
@@ -845,7 +847,7 @@ Overfull \hbox (1.95422pt too wide) in paragraph at lines 265--266
  [][] 
  []
 
-<figures/model.png, id=169, 1111.7535pt x 484.81125pt>
+<figures/model.png, id=174, 1111.7535pt x 484.81125pt>
 File: figures/model.png Graphic file (type png)
 <use figures/model.png>
 Package pdftex.def Info: figures/model.png  used on input line 271.
@@ -879,37 +881,90 @@ Underfull \hbox (badness 1496) in paragraph at lines 287--287
 e
  []
 
+<figures/route.jpg, id=333, 652.839pt x 104.7915pt>
+File: figures/route.jpg Graphic file (type jpg)
+<use figures/route.jpg>
+Package pdftex.def Info: figures/route.jpg  used on input line 297.
+(pdftex.def)             Requested size: 261.13097pt x 41.91585pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
+
+ []
+
+[12 <./figures/route.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
 (Document.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 10--12
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]\OT1/cmr/m/n/10.95 Cisco CCNA { Dis-tance Vec-tor Rout-ing Pro-to-cols { Cer-
+ti-fi-ca-tionKits.com.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[][]$\OT1/cmtt/m/n/10.95 https : / / www . certificationkits . com / cisco-[]ce
+rtification / ccna-[]articles /
+ []
+
+
+Overfull \hbox (1.27318pt too wide) in paragraph at lines 4--8
+\OT1/cmtt/m/n/10.95 cisco-[]ccna-[]intro-[]to-[]routing-[]basics / cisco-[]ccna
+-[]distance-[]vector-[]routing-[]protocols/$[][]\OT1/cmr/m/n/10.95 . 
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\OT1/cmr/m/n/10.95 P.676 : At-ten-u-a-tion by at-mo-spheric gases.  [][]$\OT1
 /cmtt/m/n/10.95 https : / / www . itu . int / rec / R-[]REC-[]P .
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 18--20
+Underfull \hbox (badness 4621) in paragraph at lines 28--30
 []\OT1/cmr/m/n/10.95 P.840 : At-ten-u-a-tion due to clouds and fog.  [][]$\OT1/
 cmtt/m/n/10.95 https : / / www . itu . int / rec / R-[]REC-[]P .
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
  (Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 308.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
 Package rerunfilecheck Info: File `Document.out' has not changed.
-(rerunfilecheck)             Checksum: EBEB8FB39B00D41E3CE73A93875C8ACA;1857.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
+(rerunfilecheck)             Checksum: 5C654474FFCF09BF98B7151B83301C85;1969.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
  ) 
 Here is how much of TeX's memory you used:
- 10712 strings out of 481161
- 157656 string characters out of 2902404
- 651346 words of memory out of 3000000
- 25908 multiletter control sequences out of 15000+200000
+ 10739 strings out of 481161
+ 158007 string characters out of 2902404
+ 651385 words of memory out of 3000000
+ 25923 multiletter control sequences out of 15000+200000
  543750 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,120p,440b,2275s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,120p,528b,2275s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-
 super-ts1.enc}<C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/font
@@ -927,9 +982,9 @@ l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ASUS/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/
 Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt10
 95.pfb>
-Output written on Document.pdf (13 pages, 954631 bytes).
+Output written on Document.pdf (15 pages, 991646 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 190 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
