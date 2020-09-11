@@ -5,6 +5,9 @@
 \input{settings/macros}
 \usepackage[ framed, numbered]{matlab-prettifier}%framed,%
 \usepackage{listings}
+\usepackage{pythonhighlight}
+
+
 \begin{document}
 
 \input{content/title_page}
@@ -13,6 +16,8 @@
 \begin{center}
 	\textbf{\textit{* PDF is clickable}}
 \end{center}
+
+\textit{Note : Codes, Models and other materials of the Task 1 can be found at \href{https://github.com/bimalka98/RF-Propagation-Model}{here}.}
 \pagebreak
 %%-----------------------------------------------------------------------
 \section{Modeling the RF propagation Using Matlab}
@@ -248,17 +253,46 @@ P_{dB}(d_{km}) & =74~dB - Total~Path~Loss
 \pagebreak
 
 \subsection{Transmitting a voice signal over a noisy channel using the above Transmission frequency and the Propagation model.}
+\vspace{5mm}
+\subsubsection{Logic and Assumptions Used to implement the Propagation Model}
 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale = 0.36]{figures/voicePL}
-	\caption{Variation of the Path Loss with Frequency in the Voice Signal}
+	\caption{Variation of the Total Path Loss with the Frequency in modulated Voice Signal}
 \end{figure}
 
-By inspecting the above figure, it can be concluded that the total Path Loss of the modulated Voice Signal is almost the same as that of the carrier wave (50 GHz) and therefore path loss variation due to the frequency in the above range can be neglected and can be assumed as a constant of 214.6240 dB.\\
-Therefore for the following model, total path loss of the signal was taken as 214.6240 dB and it is included in the Free Space Loss block.
+By inspecting the above figure, it can be observed that the total Path Loss of the \textbf{Frequency Modulated Voice Signal}, over its frequency range( \textit{from 50e9 - 4e3 to 50e9 + 4e3})Hz changes only by a value less than 0.000025 dB which is almost Zero. Therefore in a real world application it can be assumed that the total path loss of the modulated voice signal is as same as that of the carrier wave(50 GHz) alone. That is, path loss variation due to the frequency variation in the above range can be neglected and can be assumed as a constant of 214.6240 dB which is the total path loss corresponding to the 50 GHz wave. Therefore for the following model, total path loss of the signal was taken as 214.6240 dB and it was included in the \textbf{\textit{Free Space Loss block}} .\\
 
+In addition to that since the attenuation affects only to the amplitude of the signal, actual scenario of the Frequency Modulation of the voice signal was not considered and instead the voice signal was FM modulated using the \textbf{\textit{FM Modulator Baseband block}} which is an ideal option for simulation purposes. 
+\vspace{2cm}
 \subsubsection{RF Propagation Model - Simulink}
+
+Steps of the simulation are as follows:
+\begin{enumerate}[1.]
+	\item Input the voice.wav file of 8000Hz sampling rate using \textbf{\textit{From Multimedia File block}}.
+	\item Normalization of the voice signal using \textbf{\textit{Normalization block}}.
+	\item Frequency modulating the signal using \textbf{\textit{FM Modulator Baseband block}}.
+	\item Addition of the -3 dB Cable loss at Transmitter using \textbf{\textit{dB Gain block}}.
+	\item Addition of the 30 dB transmitter gain using the \textbf{\textit{Transmitter block}}.
+	\item Addition of the effect of noise using \textbf{\textit{AWGN channel block}}.
+	\item Addition of the -214.6240 dB propagation loss using \textbf{\textit{Free Space Path Loss block}}.
+	\item Addition of the 24.77 dB receiver gain using  \textbf{\textit{Receiver Preamp block}}.
+	\item Addition of the -4 dB Cable loss at the Receiver using \textbf{\textit{dB Gain block}}.
+	\item Demodulating the signal using \textbf{\textit{FM Demodulator Baseband block}}.
+	\item Saving the output voice signal using \textbf{\textit{To Multimedia File block}}.
+	\item convert the output signal into audio using \textbf{\textit{Audio Device Writer block}}.
+\end{enumerate}
+\vspace{1cm}
+
+Model can be downloaded from \href{https://github.com/bimalka98/RF-Propagation-Model/blob/master/RFPL%20Modelling/code/VoiceTransmissionBaseband.slx}{here}. Voice sample can be found at \href{https://github.com/bimalka98/RF-Propagation-Model/blob/master/RFPL%20Modelling/code/voice.wav}{here}
+	
+\begin{figure}[!h]
+	\centering
+	\includegraphics[scale = 0.43 ]{figures/model} %angle= 90
+	\caption{RF Propagation Model - Simulink}
+\end{figure}
+\vspace{1.5cm}
 
 \begin{figure}[!h]
 	\centering
@@ -266,26 +300,333 @@ Therefore for the following model, total path loss of the signal was taken as 21
 	\caption{Frequency Spectrum of the signal at Various States}
 \end{figure}
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[scale = 0.64, angle= 90]{figures/model}
-	\caption{RF Propagation Model - Simulink}
-\end{figure}
 
 
 \pagebreak
-\subsection{Codes for Task 1}
-\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{code/RFPL.m}
 
+\subsection{Codes for Task 1}
+
+To view the following code on GitHub click \href{https://github.com/bimalka98/RF-Propagation-Model/blob/master/RFPL%20Modelling/code/RFPL.m}{here}.\\
+\lstinputlisting[basicstyle = \mlttfamily\scriptsize , style = Matlab-editor]{code/RFPL.m}
+\pagebreak
+To view the following code on GitHub click \href{https://github.com/bimalka98/RF-Propagation-Model/blob/master/RFPL%20Modelling/code/plotCurve.m}{here}.\\
 \lstinputlisting[basicstyle = \mlttfamily\scriptsize , style =
 Matlab-editor]{code/plotCurve.m}
 \vfill
-\pagebreak
+
 
 %=================================TASK TWO MANET============================
-
+\pagebreak
 \section{Implementing a Simplified Version of the Dynamic Source Routing(DSR) Protocol in Ad Hoc Wireless Networks}
 %%-----------------------------------------------------------------------
+
+\subsection{Simulation of a MANET with 6 nodes}
+For the simulation of the Dynamic Source Routing(DSR) Protocol, we have implemented a MANET with the aid of the code base provided in the assignment.
+
+\subsubsection{Codes for Task 2}
+
+We were tasked with completing the routing function in ‘node.py’ and the completed routing function is as follows.\\
+
+\begin{python}
+	"""
+	    ------------------------------------------------------------------------------
+	    node.py
+	    ------------------------------------------------------------------------------
+
+	"""
+	def route(self, pkt):
+
+		 if pkt.type == PKT_TYPE.RREQ:    #checking whether the packet is a
+																			#route request
+				 if (self.check_in_recent(pkt)) or (pkt.check_id(self.id)):
+					#checking whether the packet has already passed through the node
+						 self.disregard += 1  #if it has already been processed,
+																	#it is counted as a disregarded packet
+						 self.forward()   #proceeding onto the next packet
+				 else:    #if the packet is received for the first time
+						 self.add_to_recent(pkt)      #adding to the recent packet list
+																					#of the node
+						 if pkt.target == self.id:    #checking whether this node
+																					#is the destination of the packet
+								 rrepPkt = self.generate_RREP(pkt)    #creating
+																											#a route reply packet
+								 self.add_to_queue_out(rrepPkt)   #sending the packet
+						 else:    #if the packet is not addressed to the considered node
+								 pkt.add_id(self.id)     #appending the id of this node
+																				 #to the packet route
+								 self.add_to_queue_out(pkt)   #sending the packet
+
+		 elif pkt.type == PKT_TYPE.RREP:  #checking whether the packet is a
+																			#route reply packet
+				 if pkt.source == self.id:    #checking whether the packet
+																			#has reached the source
+						 self.add_to_cache(pkt)   #getting the route from the packet
+																			#into the cache
+						 if self.check_in_buffer(pkt):    #checking whether the data
+																							#packet is available in buffer
+								 dataPkt = self.retrieve_from_buffer(pkt)#getting the data
+																												 #packet from the
+																												 #buffer(as dataPkt)
+								 self.add_path_from_cache(dataPkt)    #adding the route to
+																											#the data packet
+								 self.add_to_queue_out(dataPkt)   #sending the packet
+				 else:
+						 self.add_to_queue_out(pkt)   #forwarding the route reply packet
+																					#until it reaches the source
+
+		 elif pkt.type == PKT_TYPE.DPKT:  #checking whether the packet is a
+																			#data packet
+				 if self.id == pkt.source:    #checking whether the packet is
+																			#origintaing from the considered node
+						 if self.check_in_cache(pkt): #checking for the path for
+																					#the packet in the node cache
+								 self.add_path_from_cache(pkt)    #adding the path from
+																									#the node cache
+								 self.add_to_queue_out(pkt)   #sending the packet
+						 else:    #if the path for the packet is not available in cache
+								 self.add_to_buffer(pkt)  #keep the data packet in a buffer
+								 rreqPkt = self.generate_RREQ(pkt)    #creating a route
+																											#request packet
+								 self.add_to_recent(rreqPkt)  #adding the route request
+																							#packet to the recents list
+																							#of the node
+								 self.add_to_queue_out(rreqPkt)   #sending the packet
+				 elif self.id == pkt.target:  #checking whether the data packet
+																			#has reached its destination
+						 self.received.append(pkt)    #saving the received data packet
+				 else:
+							self.add_to_queue_out(pkt)
+\end{python}
+\vspace{1cm}
+In addition, we have also created ‘results.py’ which we have used to interpret the final evaluation results of the simulation.\\
+
+\begin{python}
+	"""
+	    ------------------------------------------------------------------------------
+	    results.py
+	    ------------------------------------------------------------------------------
+
+	"""
+
+	from .packet import PKT_TYPE
+
+	class Results:
+	    def __init__(self):
+	        self.dpkt_count = 0
+	        self.total_hops = 0
+	        self.counted_dpkts = []
+
+	    def counter(self,pkt):
+	        """
+	        Checking the ID of packets to avoid duplicates
+	        and counting the number of data packets
+	        """
+	        self.total_hops += 1
+	        if (pkt.id) not in (self.counted_dpkts):
+	            self.counted_dpkts.append(pkt.id)
+	            self.dpkt_count += 1
+
+	    def print_results(self):
+	        """
+	        Printing the results
+	        """
+	        print ("Number of data packets :",self.dpkt_count)
+	        print("Total hops :",self.total_hops)
+	        print(
+	            "Average no. of hops per data packet :",
+	            (self.total_hops/self.dpkt_count)
+	            )
+\end{python}
+\pagebreak
+Finally, the ‘demo.py’ file which was used to run the simulation is given below.
+We have used a MANET consisting of 6 nodes
+We have simulated for the transmission of 4 data packets.\\
+
+\begin{python}
+	"""
+	    ------------------------------------------------------------------------------
+	    demo.py
+	    ------------------------------------------------------------------------------
+
+	"""
+
+	from simulator.graph import Graph
+	from simulator.visualizer import step
+	import cv2
+
+	manet = Graph()
+
+	# initialize network
+
+	tx_range = 200
+	dynamic = False  from simulator.graph import Graph
+	from simulator.visualizer import step
+	import cv2
+
+	manet = Graph()
+
+	# initialize network
+
+
+	tx_range = 200
+	dynamic = False  # True to use mobile model
+
+	no_of_hops =0
+
+	manet.add_node(500, 550, tx_range)  # "Add node 0 at 500,500"
+	manet.add_node(690, 600, tx_range)  # "Add node 1 at 690,600"
+	manet.add_node(780, 700, tx_range)  # "Add node 2 at 780,700"
+	manet.add_node(750, 600, tx_range)  # "Add node 3 at 750,600"
+	manet.add_node(790, 500, tx_range)  # "Add node 4 at 790,500"
+	manet.add_node(950, 600, tx_range)  # "Add node 5 at 950,600"
+
+	manet.send(0, 5, 1, 'Test')  # send a data packet at time step 1
+	                             # from node 0 to 5
+	manet.send(4, 0, 1, 'Test')  # send a data packet at time step 1
+	                             # from node 4 to 1
+	manet.send(2, 0, 3, 'Test')  # send a data packet at time step 3
+	                             # from node 2 to 0
+	manet.send(4, 2, 7, 'Test')  # send a data packet at time step 7
+	                             # from node 4 to 2
+	for t in range(15):  # Simulate for 15 time steps
+	    step(manet, t, dynamic)
+
+	manet.results.print_results()
+
+	cv2.destroyAllWindows()
+\end{python}
+
+\subsubsection{Terminal Output of the Simulation}
+
+\begin{verbatim}
+	step 00:  []
+
+	step 01:  [('0', '1', 'REQ', ('0', '5')), ('4', '1', 'REQ', ('4', '0')),
+					  ('4', '3', 'REQ', ('4', '0')), ('4', '5', 'REQ', ('4', '0'))]
+
+	step 02:  [('1', '0', 'REQ', ('0', '5')), ('1', '2', 'REQ', ('0', '5')),
+					  ('1', '3', 'REQ', ('0', '5')), ('1', '4', 'REQ', ('0', '5')),
+					  ('3', '1', 'REQ', ('4', '0')), ('3', '2', 'REQ', ('4', '0')),
+					  ('3', '4', 'REQ', ('4', '0')), ('5', '2', 'REQ', ('4', '0')),
+					  ('5', '4', 'REQ', ('4', '0'))]
+
+	step 03:  [('1', '0', 'REQ', ('4', '0')), ('1', '2', 'REQ', ('4', '0')),
+					  ('1', '3', 'REQ', ('4', '0')), ('1', '4', 'REQ', ('4', '0')),
+					  ('2', '1', 'REQ', ('0', '5')), ('2', '3', 'REQ', ('0', '5')),
+					  ('2', '5', 'REQ', ('0', '5')), ('3', '1', 'REQ', ('0', '5')),
+					  ('3', '2', 'REQ', ('0', '5')), ('3', '4', 'REQ', ('0', '5')),
+					  ('4', '1', 'REQ', ('0', '5')), ('4', '3', 'REQ', ('0', '5')),
+					  ('4', '5', 'REQ', ('0', '5'))]
+
+	step 04:  [('0', '1', 'REP', ('4', '0')), ('2', '1', 'REQ', ('4', '0')),
+					  ('2', '3', 'REQ', ('4', '0')), ('2', '5', 'REQ', ('4', '0')),
+					  ('5', '2', 'REP', ('0', '5'))]
+
+	step 05:  [('1', '4', 'REP', ('4', '0')), ('2', '1', 'REQ', ('2', '0')),
+					  ('2', '3', 'REQ', ('2', '0')), ('2', '5', 'REQ', ('2', '0'))]
+
+	step 06:  [('1', '0', 'REQ', ('2', '0')), ('1', '2', 'REQ', ('2', '0')),
+					  ('1', '3', 'REQ', ('2', '0')), ('1', '4', 'REQ', ('2', '0')),
+					  ('2', '1', 'REP', ('0', '5')), ('3', '1', 'REQ', ('2', '0')),
+					  ('3', '2', 'REQ', ('2', '0')), ('3', '4', 'REQ', ('2', '0')),
+					  ('4', '1', 'DATA', ('4', '0')), ('5', '2', 'REQ', ('2', '0')),
+					  ('5', '4', 'REQ', ('2', '0'))]
+
+	step 07:  [('0', '1', 'REP', ('2', '0')), ('1', '0', 'REP', ('0', '5')),
+					  ('4', '1', 'REQ', ('2', '0')), ('4', '3', 'REQ', ('2', '0')),
+					  ('4', '5', 'REQ', ('2', '0')), ('5', '2', 'REQ', ('5', '2')),
+					  ('5', '4', 'REQ', ('5', '2'))]
+
+	step 08:  [('0', '1', 'DATA', ('0', '5')), ('1', '0', 'DATA', ('4', '0')),
+					  ('2', '5', 'REP', ('5', '2')), ('4', '1', 'REQ', ('5', '2')),
+					  ('4', '3', 'REQ', ('5', '2')), ('4', '5', 'REQ', ('5', '2'))]
+
+	step 09:  [('1', '2', 'REP', ('2', '0')), ('3', '1', 'REQ', ('5', '2')),
+					  ('3', '2', 'REQ', ('5', '2')), ('3', '4', 'REQ', ('5', '2')),
+					  ('5', '2', 'DATA', ('5', '2'))]
+
+	step 10:  [('1', '2', 'DATA', ('0', '5')), ('2', '1', 'DATA', ('2', '0'))]
+
+	step 11:  [('1', '0', 'REQ', ('5', '2')), ('1', '2', 'REQ', ('5', '2')),
+						 ('1', '3', 'REQ', ('5', '2')), ('1', '4', 'REQ', ('5', '2'))]
+
+	step 12:  [('0', '1', 'REQ', ('5', '2')), ('1', '0', 'DATA', ('2', '0')),
+					   ('2', '5', 'DATA', ('0', '5'))]
+
+	step 13:  []
+	step 14:  []
+\end{verbatim}
+\pagebreak
+
+\subsubsection{Visualizer Outputs}
+
+\begin{figure}[!h]
+	\centering
+	\subfigure[Step 0]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_0.png}
+
+	}\hfill
+	\subfigure[Step 1]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_1.png}
+
+	}\hfill
+	\subfigure[Step 2]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_2.png}
+	}\\
+	\subfigure[Step 3]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_3.png}
+
+	}\hfill
+	\subfigure[Step 4]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_4.png}
+
+	}\hfill
+	\subfigure[Step 5]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_5.png}
+	}\\
+
+	\subfigure[Step 6]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_6.png}
+
+	}\hfill
+	\subfigure[Step 7]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_7.png}
+
+	}\hfill
+	\subfigure[Step 8]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_8.png}
+	}\\
+
+	\subfigure[Step 9]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_9.png}
+
+	}\hfill
+	\subfigure[Step 10]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_10.png}
+
+	}\hfill
+	\subfigure[Step 11]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_11.png}
+
+	}\hfill
+	\subfigure[Step 12]
+	{ \includegraphics[scale=0.165]{figures/outputs/step_12.png}
+
+	}\\
+	\caption{The visualizer outputs for each time step}
+	%\label{}
+\end{figure}
+
+
+\textbf{The results of the final evaluation is as follows.}\\
+
+Number of data packets : 4\\
+Total hops : 8\\
+Average no. of hops per data packet : 2.0\\
+
+
+%---------------------------------------------------------------------------
+
 
 \subsection{Improving the Efficiency of Protocol by further Exploiting the Route Cache}
 
@@ -361,11 +702,9 @@ In dynamic source routing protocol, the sender itself decides the complete path 
 
 \end{itemize}
 
-\subsection{Codes for Task 2}
 
-\vfill
-\hrule
-\vspace{1cm}
+
+\pagebreak
 \bibliographystyle{plain}
 \bibliography{refer}
 

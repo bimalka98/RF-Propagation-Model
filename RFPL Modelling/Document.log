@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.9)  9 SEP 2020 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.9)  11 SEP 2020 21:19
 entering extended mode
 **./Document.tex
 (Document.tex
@@ -401,13 +401,36 @@ Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
 \pfg@pcount=\count289
 \pfg@scount=\count290
 \pfg@temp=\write4
-))
+)
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.s
 ty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip59
 \multirow@cntb=\count291
 \multirow@dima=\skip60
+))
+("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigure
+.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip61
+\subfigcapskip=\skip62
+\subfigcaptopadj=\dimen152
+\subfigbottomskip=\skip63
+\subfigcapmargin=\dimen153
+\subfiglabelskip=\skip64
+\c@subfigure=\count292
+\c@lofdepth=\count293
+\c@subtable=\count294
+\c@lotdepth=\count295
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subfigure
+.cfg")
+\subfig@top=\skip65
+\subfig@bottom=\skip66
 ) (settings/page.tex
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.s
 ty"
@@ -416,17 +439,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count292
-\Gm@cntv=\count293
-\c@Gm@tempcnt=\count294
-\Gm@bindingoffset=\dimen152
-\Gm@wd@mp=\dimen153
-\Gm@odd@mp=\dimen154
-\Gm@even@mp=\dimen155
-\Gm@layoutwidth=\dimen156
-\Gm@layoutheight=\dimen157
-\Gm@layouthoffset=\dimen158
-\Gm@layoutvoffset=\dimen159
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen154
+\Gm@wd@mp=\dimen155
+\Gm@odd@mp=\dimen156
+\Gm@even@mp=\dimen157
+\Gm@layoutwidth=\dimen158
+\Gm@layoutheight=\dimen159
+\Gm@layouthoffset=\dimen160
+\Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks25
 
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.c
@@ -435,15 +458,15 @@ fg")))
 ty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip61
-\f@nch@O@elh=\skip62
-\f@nch@O@erh=\skip63
-\f@nch@O@olh=\skip64
-\f@nch@O@orh=\skip65
-\f@nch@O@elf=\skip66
-\f@nch@O@erf=\skip67
-\f@nch@O@olf=\skip68
-\f@nch@O@orf=\skip69
+\f@nch@headwidth=\skip67
+\f@nch@O@elh=\skip68
+\f@nch@O@erh=\skip69
+\f@nch@O@olh=\skip70
+\f@nch@O@orh=\skip71
+\f@nch@O@elf=\skip72
+\f@nch@O@erf=\skip73
+\f@nch@O@olf=\skip74
+\f@nch@O@orf=\skip75
 ) (settings/macros.tex)
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/matlab-prettifier\m
 atlab-prettifier.sty"
@@ -455,24 +478,24 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.s
 ty"
-\lst@mode=\count295
+\lst@mode=\count299
 \lst@gtempboxa=\box51
 \lst@token=\toks26
-\lst@length=\count296
-\lst@currlwidth=\dimen160
-\lst@column=\count297
-\lst@pos=\count298
-\lst@lostspace=\dimen161
-\lst@width=\dimen162
-\lst@newlines=\count299
-\lst@lineno=\count300
-\lst@maxwidth=\dimen163
+\lst@length=\count300
+\lst@currlwidth=\dimen162
+\lst@column=\count301
+\lst@pos=\count302
+\lst@lostspace=\dimen163
+\lst@width=\dimen164
+\lst@newlines=\count303
+\lst@lineno=\count304
+\lst@maxwidth=\dimen165
 
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.st
 y"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count301
-\lst@skipnumbers=\count302
+\c@lstnumber=\count305
+\lst@skipnumbers=\count306
 \lst@framebox=\box52
 )
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings.c
@@ -480,18 +503,23 @@ fg"
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-\netBracketCount@mlpr=\count303
-\blkLvl@mlpr=\count304
-\blkLvlAtClassdef@mlpr=\count305
-\emHeight@mlpr=\skip70
-\jayDepth@mlpr=\skip71
-\sectionRuleOffset@mlpr=\skip72
+\netBracketCount@mlpr=\count307
+\blkLvl@mlpr=\count308
+\blkLvlAtClassdef@mlpr=\count309
+\emHeight@mlpr=\skip76
+\jayDepth@mlpr=\skip77
+\sectionRuleOffset@mlpr=\skip78
 \toks@mlpr=\toks27
+)
+("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pythonhighlight\pyt
+honhighlight.sty"
+Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivi
+er Verdier <olivier.verdier@gmail.com>
 )
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backend
 -pdftex.def"
 File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count306
+\l__kernel_color_stack_int=\count310
 \l__pdf_internal_box=\box53
 ) (Document.aux
 
@@ -504,7 +532,7 @@ See the natbib package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 ...mand\NAT@force@numbers{}\NAT@force@numbers
+l.89 ...mand\NAT@force@numbers{}\NAT@force@numbers
                                                   
 Check the bibliography entries for non-compliant syntax,
 or select author-year BibTeX style, e.g. plainnat
@@ -512,24 +540,24 @@ or select author-year BibTeX style, e.g. plainnat
 )
 \openout1 = `Document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 8.
+Package hyperref Info: Link coloring ON on input line 11.
 
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.st
 y"
@@ -543,11 +571,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ttitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count307
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
  (Document.out) (Document.out)
 \@outlinefile=\write5
 \openout5 = `Document.out'.
@@ -556,16 +584,16 @@ LaTeX Info: Redefining \nameref on input line 8.
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
 f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen164
+\scratchcounter=\count312
+\scratchdimen=\dimen166
 \scratchbox=\box55
-\nofMPsegments=\count309
-\nofMParguments=\count310
+\nofMPsegments=\count313
+\nofMParguments=\count314
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen165
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen167
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
 \everyMPtoPDFconversion=\toks29
 )
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstop
@@ -576,15 +604,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 )
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 8.
-Package gensymb Info: Math companion symbols declared on input line 8.
-LaTeX Info: Redefining \degree on input line 8.
-LaTeX Info: Redefining \celsius on input line 8.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 11.
+Package gensymb Info: Math companion symbols declared on input line 11.
+LaTeX Info: Redefining \degree on input line 11.
+LaTeX Info: Redefining \celsius on input line 11.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 8.
-LaTeX Info: Redefining \ohm on input line 8.
-Package gensymb Info: Using \textohm for \ohm on input line 8.
-Package gensymb Info: Using \textmu for \micro on input line 8.
+erthousand on input line 11.
+LaTeX Info: Redefining \ohm on input line 11.
+Package gensymb Info: Using \textohm for \ohm on input line 11.
+Package gensymb Info: Using \textmu for \micro on input line 11.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -620,9 +648,9 @@ Package gensymb Info: Using \textmu for \micro on input line 8.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count314
+\c@lstlisting=\count318
 (content/title_page.tex
-<figures/uomlogo.png, id=79, 307.1475pt x 326.21875pt>
+<figures/uomlogo.png, id=95, 307.1475pt x 326.21875pt>
 File: figures/uomlogo.png Graphic file (type png)
 <use figures/uomlogo.png>
 Package pdftex.def Info: figures/uomlogo.png  used on input line 10.
@@ -652,26 +680,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.18 \section
+l.23 \section
              {Modeling the RF propagation Using Matlab} [1]
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--36
+Underfull \hbox (badness 10000) in paragraph at lines 29--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
-<figures/FreeSpacePL.png, id=123, 1218.80344pt x 647.41875pt>
+<figures/FreeSpacePL.png, id=145, 1218.80344pt x 647.41875pt>
 File: figures/FreeSpacePL.png Graphic file (type png)
 <use figures/FreeSpacePL.png>
-Package pdftex.def Info: figures/FreeSpacePL.png  used on input line 81.
+Package pdftex.def Info: figures/FreeSpacePL.png  used on input line 86.
 (pdftex.def)             Requested size: 426.5876pt x 226.59995pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -679,194 +707,193 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 94.
+(hyperref)                removing `\begingroup' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 94.
+(hyperref)                removing `\<let>-command' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 94.
+(hyperref)                removing `\NAT@ctype' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 94.
+(hyperref)                removing `\z@' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 94.
+(hyperref)                removing `\let' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 94.
+(hyperref)                removing `\let' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 94.
+(hyperref)                removing `\new@ifnextchar' on input line 99.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--101
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
 
  []
 
-<figures/RainPL.png, id=137, 1218.05063pt x 646.66594pt>
+<figures/RainPL.png, id=158, 1218.05063pt x 646.66594pt>
 File: figures/RainPL.png Graphic file (type png)
 <use figures/RainPL.png>
-Package pdftex.def Info: figures/RainPL.png  used on input line 106.
+Package pdftex.def Info: figures/RainPL.png  used on input line 111.
 (pdftex.def)             Requested size: 426.32411pt x 226.33646pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 110.
+(hyperref)                removing `\begingroup' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 110.
+(hyperref)                removing `\<let>-command' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 110.
+(hyperref)                removing `\NAT@ctype' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 110.
+(hyperref)                removing `\z@' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 110.
+(hyperref)                removing `\let' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 110.
+(hyperref)                removing `\let' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 110.
+(hyperref)                removing `\new@ifnextchar' on input line 115.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 [3 <./figures/FreeSpacePL.png> <./figures/RainPL.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 113--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
-<figures/FogPL.png, id=146, 1212.78094pt x 645.16031pt>
+<figures/FogPL.png, id=167, 1212.78094pt x 645.16031pt>
 File: figures/FogPL.png Graphic file (type png)
 <use figures/FogPL.png>
-Package pdftex.def Info: figures/FogPL.png  used on input line 120.
+Package pdftex.def Info: figures/FogPL.png  used on input line 125.
 (pdftex.def)             Requested size: 424.47969pt x 225.80948pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 124.
+(hyperref)                removing `\begingroup' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 124.
+(hyperref)                removing `\<let>-command' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 124.
+(hyperref)                removing `\NAT@ctype' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 124.
+(hyperref)                removing `\z@' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 124.
+(hyperref)                removing `\let' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 124.
+(hyperref)                removing `\let' on input line 129.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 124.
+(hyperref)                removing `\new@ifnextchar' on input line 129.
 
-<figures/GasPL.png, id=149, 1230.84843pt x 648.17157pt>
+<figures/GasPL.png, id=170, 1230.84843pt x 648.17157pt>
 File: figures/GasPL.png Graphic file (type png)
 <use figures/GasPL.png>
-Package pdftex.def Info: figures/GasPL.png  used on input line 136.
+Package pdftex.def Info: figures/GasPL.png  used on input line 141.
 (pdftex.def)             Requested size: 430.8034pt x 226.86345pt.
-<figures/TotalPL.png, id=150, 1221.81468pt x 608.2725pt>
+<figures/TotalPL.png, id=171, 1221.81468pt x 608.2725pt>
 File: figures/TotalPL.png Graphic file (type png)
 <use figures/TotalPL.png>
-Package pdftex.def Info: figures/TotalPL.png  used on input line 146.
+Package pdftex.def Info: figures/TotalPL.png  used on input line 151.
 (pdftex.def)             Requested size: 427.64154pt x 212.89856pt.
 [4 <./figures/FogPL.png> <./figures/GasPL.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
  []
 
-<figures/AllinOne.png, id=158, 1212.02812pt x 645.16031pt>
+<figures/AllinOne.png, id=179, 1212.02812pt x 645.16031pt>
 File: figures/AllinOne.png Graphic file (type png)
 <use figures/AllinOne.png>
-Package pdftex.def Info: figures/AllinOne.png  used on input line 159.
+Package pdftex.def Info: figures/AllinOne.png  used on input line 164.
 (pdftex.def)             Requested size: 424.2162pt x 225.80948pt.
 [5 <./figures/TotalPL.png> <./figures/AllinOne.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--213
+Underfull \hbox (badness 10000) in paragraph at lines 209--218
 
  []
 
-<figures/sp.png, id=165, 1231.60126pt x 636.87938pt>
+<figures/sp.png, id=186, 1231.60126pt x 636.87938pt>
 File: figures/sp.png Graphic file (type png)
 <use figures/sp.png>
-Package pdftex.def Info: figures/sp.png  used on input line 245.
+Package pdftex.def Info: figures/sp.png  used on input line 250.
 (pdftex.def)             Requested size: 431.0669pt x 222.91112pt.
 [6 <./figures/sp.png>]
-<figures/voicePL.png, id=172, 1322.69156pt x 638.385pt>
+<figures/voicePL.png, id=193, 1322.69156pt x 638.385pt>
 File: figures/voicePL.png Graphic file (type png)
 <use figures/voicePL.png>
-Package pdftex.def Info: figures/voicePL.png  used on input line 254.
+Package pdftex.def Info: figures/voicePL.png  used on input line 261.
 (pdftex.def)             Requested size: 476.1686pt x 229.81842pt.
-<figures/spect2.png, id=173, 1156.32pt x 545.03625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
+[7 <./figures/voicePL.png>]
+<figures/model.png, id=207, 1111.7535pt x 484.81125pt>
+File: figures/model.png Graphic file (type png)
+<use figures/model.png>
+Package pdftex.def Info: figures/model.png  used on input line 292.
+(pdftex.def)             Requested size: 478.0447pt x 208.46477pt.
+<figures/spect2.png, id=208, 1156.32pt x 545.03625pt>
 File: figures/spect2.png Graphic file (type png)
 <use figures/spect2.png>
-Package pdftex.def Info: figures/spect2.png  used on input line 265.
+Package pdftex.def Info: figures/spect2.png  used on input line 299.
 (pdftex.def)             Requested size: 485.6511pt x 228.91367pt.
 
-Overfull \hbox (1.95422pt too wide) in paragraph at lines 265--266
+Overfull \hbox (1.95422pt too wide) in paragraph at lines 299--300
  [][] 
  []
 
-<figures/model.png, id=174, 1111.7535pt x 484.81125pt>
-File: figures/model.png Graphic file (type png)
-<use figures/model.png>
-Package pdftex.def Info: figures/model.png  used on input line 271.
-(pdftex.def)             Requested size: 711.51982pt x 310.27814pt.
+[8 <./figures/model.png> <./figures/spect2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ []
 
-[7 <./figures/voicePL.png> <./figures/spect2.png>]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-
-Overfull \vbox (4.5604pt too high) has occurred while \output is active []
-
-
-[8 <./figures/model.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 278.
- (code/RFPL.m
+nput line 310.
+(code/RFPL.m
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
@@ -875,48 +902,156 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 ("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmtt.fd"
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-[9]) (code/plotCurve.m [10]) [11]
-Underfull \hbox (badness 1496) in paragraph at lines 287--287
+[9]) [10]
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
+
+ []
+
+(code/plotCurve.m) [11]
+Underfull \hbox (badness 1496) in paragraph at lines 320--320
 []\OT1/cmr/bx/n/14.4 Implementing a Sim-pli-fied Ver-sion of the Dy-namic Sourc
 e
  []
 
-<figures/route.jpg, id=333, 652.839pt x 104.7915pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+("C:\Users\ASUS\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstlang1.s
+ty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 337.
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
+
+ []
+
+[14] [15]
+<figures/outputs/step_0.png, id=546, 688.07062pt x 526.21594pt>
+File: figures/outputs/step_0.png Graphic file (type png)
+<use figures/outputs/step_0.png>
+Package pdftex.def Info: figures/outputs/step_0.png  used on input line 568.
+(pdftex.def)             Requested size: 113.52675pt x 86.82188pt.
+<figures/outputs/step_1.png, id=547, 913.4125pt x 674.52pt>
+File: figures/outputs/step_1.png Graphic file (type png)
+<use figures/outputs/step_1.png>
+Package pdftex.def Info: figures/outputs/step_1.png  used on input line 572.
+(pdftex.def)             Requested size: 150.70656pt x 111.29099pt.
+<figures/outputs/step_2.png, id=548, 898.35625pt x 674.52pt>
+File: figures/outputs/step_2.png Graphic file (type png)
+<use figures/outputs/step_2.png>
+Package pdftex.def Info: figures/outputs/step_2.png  used on input line 575.
+(pdftex.def)             Requested size: 148.22238pt x 111.29099pt.
+<figures/outputs/step_3.png, id=549, 895.345pt x 674.52pt>
+File: figures/outputs/step_3.png Graphic file (type png)
+<use figures/outputs/step_3.png>
+Package pdftex.def Info: figures/outputs/step_3.png  used on input line 579.
+(pdftex.def)             Requested size: 147.72554pt x 111.29099pt.
+<figures/outputs/step_4.png, id=550, 897.3525pt x 674.52pt>
+File: figures/outputs/step_4.png Graphic file (type png)
+<use figures/outputs/step_4.png>
+Package pdftex.def Info: figures/outputs/step_4.png  used on input line 583.
+(pdftex.def)             Requested size: 148.05676pt x 111.29099pt.
+<figures/outputs/step_5.png, id=551, 897.3525pt x 674.52pt>
+File: figures/outputs/step_5.png Graphic file (type png)
+<use figures/outputs/step_5.png>
+Package pdftex.def Info: figures/outputs/step_5.png  used on input line 586.
+(pdftex.def)             Requested size: 148.05676pt x 111.29099pt.
+<figures/outputs/step_6.png, id=552, 904.37875pt x 673.51625pt>
+File: figures/outputs/step_6.png Graphic file (type png)
+<use figures/outputs/step_6.png>
+Package pdftex.def Info: figures/outputs/step_6.png  used on input line 591.
+(pdftex.def)             Requested size: 149.21605pt x 111.12538pt.
+<figures/outputs/step_7.png, id=553, 893.3375pt x 674.52pt>
+File: figures/outputs/step_7.png Graphic file (type png)
+<use figures/outputs/step_7.png>
+Package pdftex.def Info: figures/outputs/step_7.png  used on input line 595.
+(pdftex.def)             Requested size: 147.39432pt x 111.29099pt.
+<figures/outputs/step_8.png, id=554, 897.3525pt x 674.52pt>
+File: figures/outputs/step_8.png Graphic file (type png)
+<use figures/outputs/step_8.png>
+Package pdftex.def Info: figures/outputs/step_8.png  used on input line 598.
+(pdftex.def)             Requested size: 148.05676pt x 111.29099pt.
+<figures/outputs/step_9.png, id=555, 907.39pt x 677.53125pt>
+File: figures/outputs/step_9.png Graphic file (type png)
+<use figures/outputs/step_9.png>
+Package pdftex.def Info: figures/outputs/step_9.png  used on input line 603.
+(pdftex.def)             Requested size: 149.71289pt x 111.78783pt.
+<figures/outputs/step_10.png, id=556, 905.3825pt x 679.53876pt>
+File: figures/outputs/step_10.png Graphic file (type png)
+<use figures/outputs/step_10.png>
+Package pdftex.def Info: figures/outputs/step_10.png  used on input line 607.
+(pdftex.def)             Requested size: 149.38167pt x 112.11905pt.
+<figures/outputs/step_11.png, id=557, 897.3525pt x 678.535pt>
+File: figures/outputs/step_11.png Graphic file (type png)
+<use figures/outputs/step_11.png>
+Package pdftex.def Info: figures/outputs/step_11.png  used on input line 611.
+(pdftex.def)             Requested size: 148.05676pt x 111.95345pt.
+<figures/outputs/step_12.png, id=558, 898.35625pt x 675.52374pt>
+File: figures/outputs/step_12.png Graphic file (type png)
+<use figures/outputs/step_12.png>
+Package pdftex.def Info: figures/outputs/step_12.png  used on input line 615.
+(pdftex.def)             Requested size: 148.22238pt x 111.4566pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 621--622
+
+ []
+
+[16 <./figures/outputs/step_0.png> <./figures/outputs/step_1.png> <./figures/ou
+tputs/step_2.png> <./figures/outputs/step_3.png> <./figures/outputs/step_4.png>
+ <./figures/outputs/step_5.png> <./figures/outputs/step_6.png> <./figures/outpu
+ts/step_7.png> <./figures/outputs/step_8.png> <./figures/outputs/step_9.png> <.
+/figures/outputs/step_10.png> <./figures/outputs/step_11.png> <./figures/output
+s/step_12.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 623--626
+
+ []
+
+<figures/route.jpg, id=591, 652.839pt x 104.7915pt>
 File: figures/route.jpg Graphic file (type jpg)
 <use figures/route.jpg>
-Package pdftex.def Info: figures/route.jpg  used on input line 297.
+Package pdftex.def Info: figures/route.jpg  used on input line 638.
 (pdftex.def)             Requested size: 261.13097pt x 41.91585pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--340
-
- []
-
-[12 <./figures/route.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
+[17 <./figures/route.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 679--681
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 682--683
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
  []
 
-(Document.bbl
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+[18] (Document.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/10.95 Cisco CCNA { Dis-tance Vec-tor Rout-ing Pro-to-cols { Cer-
 ti-fi-ca-tionKits.com.
@@ -934,7 +1069,7 @@ Overfull \hbox (1.27318pt too wide) in paragraph at lines 4--8
 -[]distance-[]vector-[]routing-[]protocols/$[][]\OT1/cmr/m/n/10.95 . 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 20--22
 []\OT1/cmr/m/n/10.95 P.676 : At-ten-u-a-tion by at-mo-spheric gases.  [][]$\OT1
 /cmtt/m/n/10.95 https : / / www . itu . int / rec / R-[]REC-[]P .
@@ -947,24 +1082,24 @@ cmtt/m/n/10.95 https : / / www . itu . int / rec / R-[]REC-[]P .
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 712.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 712.
  (Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 712.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 712.
 Package rerunfilecheck Info: File `Document.out' has not changed.
-(rerunfilecheck)             Checksum: 5C654474FFCF09BF98B7151B83301C85;1969.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
+(rerunfilecheck)             Checksum: 173DF01E19648F6FD5FB0D1DD7DA48BD;2355.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 712.
  ) 
 Here is how much of TeX's memory you used:
- 10739 strings out of 481161
- 158007 string characters out of 2902404
- 651385 words of memory out of 3000000
- 25923 multiletter control sequences out of 15000+200000
- 543750 words of font info for 60 fonts, out of 3000000 for 9000
+ 11691 strings out of 481161
+ 171383 string characters out of 2902404
+ 1041999 words of memory out of 3000000
+ 26652 multiletter control sequences out of 15000+200000
+ 544385 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,120p,528b,2275s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,120p,831b,2360s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-
 super-ts1.enc}<C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/font
@@ -976,15 +1111,18 @@ Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmr12.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmr8.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ASUS/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ASUS/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ASUS/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/
-Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt10
-95.pfb>
-Output written on Document.pdf (15 pages, 991646 bytes).
+nts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/ASUS/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsltt10.pfb><C:/Users/ASUS/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ASUS/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+tt10.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmtt9.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/cm-super/sfrm1095.pfb><C:/Users/ASUS/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on Document.pdf (20 pages, 2111258 bytes).
 PDF statistics:
- 454 PDF objects out of 1000 (max. 8388607)
- 190 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 760 PDF objects out of 1000 (max. 8388607)
+ 382 named destinations out of 1000 (max. 500000)
+ 310 words of extra memory for PDF output out of 10000 (max. 10000000)
 
