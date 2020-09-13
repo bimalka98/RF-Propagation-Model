@@ -1,5 +1,11 @@
+%  -----------------------------------------------------------------------------
+%  Author         : Bimalka Piyaruwan Thalagala
+%  GitHub         : https://github.com/bimalka98
+%  Date Created   : 21.07.2020
+%  Last Modified  : 21.07.2020
+%  -----------------------------------------------------------------------------
+
 \documentclass[a4paper,11pt]{article}%,twocolumn
-%\documentclass[a4paper,11pt]{article}
 \input{settings/packages}
 \input{settings/page}
 \input{settings/macros}
@@ -23,7 +29,7 @@
 
 \textit{All the executable codes, a simulink model and a voice sample are included in a separate folder named as \textbf{EN2053-Assignment 2-180574K-180631J.rar} which was submitted along with this report.}\\
 
-\textit{Before run the \textbf{VoiceTransmissionBaseband.slx} simulink simulation related to the part 5 of the Task 1 ,(included in a separate folder named as \textbf{Task1-RFPM} inside the above folder) change the directories related to the voice input and output. Voice sample named as \textbf{voice.wav} is also included in the same folder.}\\ 
+\textit{Before run the \textbf{VoiceTransmissionBaseband.slx} simulink simulation related to the part 5 of the Task 1 ,(included in a separate folder named as \textbf{Task1-RFPM} inside the above folder) change the directories related to the voice input and output. Voice sample named as \textbf{voice.wav} is also included in the same folder.}\\
 
 \textit{Additionally all the materials related to Task 1 can also be found at \url{https://github.com/bimalka98/RF-Propagation-Model}}
 
@@ -275,7 +281,7 @@ P_{dB}(d_{km}) & =74~dB - Total~Path~Loss
 
 By inspecting the above figure, it can be observed that the total Path Loss of the \textbf{Frequency Modulated Voice Signal}, over its frequency range( \textit{from 50e9 - 4e3 to 50e9 + 4e3})Hz changes only by a value less than 0.000025 dB which is almost Zero. Therefore in a real world application it can be assumed that the total path loss of the modulated voice signal is as same as that of the carrier wave(50 GHz) alone. That is, path loss variation due to the frequency variation in the above range can be neglected and can be assumed as a constant of 214.6240 dB which is the total path loss corresponding to the 50 GHz wave. Therefore for the following model, total path loss of the signal was taken as 214.6240 dB and it was included in the \textbf{\textit{Free Space Loss block}} .\\
 
-In addition to that since the attenuation affects only to the amplitude of the signal, actual scenario of the Frequency Modulation of the voice signal was not considered and instead the voice signal was FM modulated using the \textbf{\textit{FM Modulator Baseband block}} which is an ideal option for simulation purposes. 
+In addition to that since the attenuation affects only to the amplitude of the signal, actual scenario of the Frequency Modulation of the voice signal was not considered and instead the voice signal was FM modulated using the \textbf{\textit{FM Modulator Baseband block}} which is an ideal option for simulation purposes.
 \vspace{2cm}
 \subsubsection{RF Propagation Model - Simulink}
 
@@ -295,9 +301,9 @@ Steps of the simulation are as follows:
 	\item convert the output signal into audio using \textbf{\textit{Audio Device Writer block}}.
 \end{enumerate}
 \vspace{1cm}
-Before run the simulation change the directories related to the voice input and output as mentioned in the page 1. 
+Before run the simulation change the directories related to the voice input and output as mentioned in the page 1.
 
-	
+
 \begin{figure}[!h]
 	\centering
 	\includegraphics[scale = 0.43 ]{figures/model} %angle= 90
